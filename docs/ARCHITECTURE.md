@@ -3,7 +3,7 @@
 ## Vision
 
 A configurable, open-source, in-game AI assistant for ARK: Survival Ascended. Gives
-every player on the server a direct line to Claude through a custom UI panel. Regular
+every player on the server a direct line to an AI assistant through a custom UI panel. Regular
 players get an ARK knowledge base and personal assistant. Admins get full server
 authority through natural language.
 
@@ -152,87 +152,53 @@ ChatPrefix=/sheldon
 
 ---
 
-### 2. MCP Bridge Server (DevOps VM — Python or TypeScript)
+### 2. Sheldon Bridge (Standalone Python Agent Server)
 
-The bridge between Claude Code and the game mod. Runs as a subprocess of Claude Code via stdio transport.
+The bridge is the core of the system — a standalone Python server that manages
+all communication between the game mod and the LLM provider.
 
-**Two viable approaches:**
-
-#### Option A: MCP Channel Server (TypeScript) — Push-capable
-
-Uses Claude Code's experimental Channels feature to push player messages directly into Claude's session without polling.
+**How it works:**
 
 ```
-Player types message → Mod sends via WebSocket → MCP Bridge receives →
-  Push via notifications/claude/channel → Claude sees it immediately →
-  Claude calls reply_to_player tool → MCP Bridge sends via WebSocket → Mod displays
+Player types message → Mod sends via WebSocket → Bridge receives →
+  Bridge verifies auth, checks tier → Calls LLM with tier-appropriate tools →
+  LLM returns tool calls → Bridge validates + executes → Feeds results back →
+  LLM generates final response → Bridge sends back via WebSocket → Player sees it
 ```
 
-- **Pro:** True real-time, no polling, Claude is immediately notified
-- **Con:** Channels are research preview (require --dangerously-load-development-channels flag), TypeScript only for now
+This is the **agentic loop** pattern: the bridge orchestrates the conversation
+between the LLM and the game, with full permission enforcement at every step.
 
-#### Option B: MCP Tool Server (Python/FastMCP) — Pull-based
-
-Classic tool-based approach. Claude checks for messages via a tool call.
+**Tool Definitions:**
 
 ```
-Player types message → Mod sends via WebSocket → MCP Bridge queues message →
-  Claude calls check_messages() tool → Gets queued messages →
-  Claude calls reply_to_player tool → MCP Bridge sends via WebSocket → Mod displays
-```
+Knowledge (player tier):
+  - lookup_dino(query)        → Dino info, blueprint, taming data
+  - lookup_item(query)        → Item info, blueprint, crafting recipe
+  - get_server_status()       → Server info, player count, uptime
+  - calculate_taming(...)     → Taming calculator
+  - calculate_breeding(...)   → Breeding stats calculator
 
-- **Pro:** Stable, well-supported, Python
-- **Con:** Requires Claude to poll (can be prompted to check frequently)
+Admin Actions (admin tier):
+  - spawn_dino_at_player(...) → Spawn dino near a player
+  - give_item(...)            → Give item to a player
+  - set_time(hour)            → Change time of day
+  - teleport_player(...)      → Teleport a player
+  - broadcast(message)        → Server-wide message
+  - execute_console_command() → Run any admin console command
 
-#### Hybrid (Recommended for launch):
-Start with Option B (Python, stable) and add Channel support (Option A) when the feature graduates from research preview.
-
-**MCP Tool Definitions:**
-
-```
-Communication:
-  - check_messages()          → Get pending player messages
-  - reply_to_player(id, msg)  → Send response to a specific player
-  - broadcast(msg)            → Send message to all players
-
-World Queries:
-  - census_wild(species?)     → Count/locate wild dinos (optional species filter)
-  - census_tamed(tribe?)      → Count/locate tamed dinos (optional tribe filter)
-  - get_players()             → All online players with positions
-  - get_player_info(id)       → Detailed player info (level, tribe, inventory)
-  - get_server_status()       → Performance metrics, uptime, player count
-  - get_tribe_info(id)        → Tribe data, member list, structures, tames
-
-Actions:
-  - execute_command(cmd)      → Run any admin console command
-  - spawn_dino(blueprint, x, y, z, level, gender, tamed?) → Spawn a dino
-  - spawn_dino_at_player(player_id, blueprint, level, gender) → Spawn near player
-  - give_item(player_id, blueprint, qty, quality?)  → Give item to player
-  - teleport_player(player_id, x, y, z)  → Teleport a player
-  - set_time(hour)            → Set time of day
-  - destroy_wild(species?)    → Selective wild dino destruction
-
-Events (from mod, buffered for check_messages or pushed via Channel):
+Events (from mod, pushed via WebSocket):
   - player_joined / player_left
-  - player_died
-  - dino_tamed
+  - player_died / dino_tamed
   - player_chat (messages directed at Sheldon)
-  - tribe_event
 ```
 
-**Context/Resources (loaded into Claude's session):**
+**Server Context:**
 
-The MCP server exposes server context files as resources. Operators point
-`personality.server_context_dir` at a directory of markdown files:
-```
-ark://context/architecture    → server architecture docs
-ark://context/ragnarok        → map-specific reference
-ark://context/primal-nemesis  → mod configuration
-ark://context/rules           → server rules and rates
-```
-
-Claude automatically has full server context without manual loading. Each
-server operator provides their own context — nothing is hardcoded.
+Operators drop markdown files into a `server-context/` directory to give the
+AI knowledge about their specific server (mods, rules, custom configurations).
+The bridge loads these at startup as part of the system prompt. Each server
+operator provides their own context — nothing is hardcoded.
 
 ---
 
@@ -294,7 +260,7 @@ Everything admins get, PLUS destructive/configuration operations:
 The bridge calls any LLM provider with native tool/function calling support.
 The operator chooses their provider and model in `config.json`. No vendor lock-in.
 
-Supported: Anthropic Claude, OpenAI GPT, Google Gemini, or any model via OpenRouter.
+Supported providers: Anthropic, OpenAI, Google Gemini, or any model via OpenRouter.
 
 **Personality prompt (loaded from operator's `personality.md`):**
 ```
@@ -404,7 +370,7 @@ All messages between the mod and MCP Bridge are JSON:
 - [ ] ARK memory files as MCP resources
 - [ ] Minimal mod: WebSocket connection + ScriptCommand handler (admin-only)
 - [ ] Chat-based I/O only (no custom UI yet)
-- [ ] Test: Claude receives messages, executes commands, responds
+- [ ] Test: LLM receives messages, executes commands, responds
 
 ### Phase 2: Custom UI
 - [ ] UMG Widget Blueprint (PrimalUI parent)

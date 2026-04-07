@@ -70,7 +70,6 @@ sheldon-ai-for-ark/
 │   └── MODDING-GUIDE.md            # How to extend/customize
 │
 └── examples/
-    ├── claude-config.example.json  # Example .mcp.json for Claude Code
     ├── gameusersettings.example.ini # Example mod INI config
     └── personality-prompts/        # Example Sheldon personality configs
         ├── default.md              # Friendly, knowledgeable assistant
@@ -181,24 +180,6 @@ WelcomeMessage=Welcome to the server! Press F8 to talk to Sheldon.
 }
 ```
 
-### Claude Code Configuration (.mcp.json)
-
-```json
-{
-  "mcpServers": {
-    "sheldon-bridge": {
-      "type": "stdio",
-      "command": "python",
-      "args": ["-m", "sheldon_bridge"],
-      "env": {
-        "SHELDON_CONFIG": "/path/to/config.json",
-        "SHELDON_AUTH_SECRET": "<secret>"
-      }
-    }
-  }
-}
-```
-
 ---
 
 ## Distribution
@@ -243,7 +224,7 @@ sheldon-bridge run
 Publish to the official MCP registry for discoverability:
 - Namespace: `io.github.[org]/sheldon-bridge`
 - Listed alongside other MCP servers
-- Searchable by developers using Claude Code
+- Searchable by developers
 
 ---
 

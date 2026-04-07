@@ -29,7 +29,7 @@ An open-source, in-game AI assistant for **ARK: Survival Ascended**. Give every 
 - **Broadcasts** — "Tell everyone the server restarts in 15 minutes"
 
 ### Architecture Highlights
-- **Multi-LLM Support** — Anthropic Claude, OpenAI GPT, Google Gemini, or any model via OpenRouter
+- **Multi-LLM Support** — Anthropic, OpenAI, Google Gemini, or any model via OpenRouter
 - **Inviolable Permission System** — enforced in deterministic code, not by the LLM ([details](docs/PERMISSIONS.md))
 - **No AsaApi Dependency** — pure Blueprint mod using official DevKit APIs
 - **Cross-Platform** — PC, Xbox, PS5 via CurseForge cloud cooking
@@ -44,7 +44,7 @@ An open-source, in-game AI assistant for **ARK: Survival Ascended**. Give every 
 │  SheldonAI Mod  │◄═══════►│  Sheldon Bridge  │◄═══════►│  LLM Provider │
 │  (in-game)      │  WebSocket  │  (Python server) │  HTTPS  │  (your choice)│
 │                 │  JSON    │                  │         │               │
-│  Custom UI      │         │  Permission      │         │  Claude       │
+│  Custom UI      │         │  Permission      │         │  Any LLM      │
 │  Game queries   │         │  enforcement     │         │  GPT-4o       │
 │  Event hooks    │         │  Agentic loop    │         │  Gemini       │
 │  Admin commands │         │  Tool registry   │         │  OpenRouter   │
@@ -97,7 +97,7 @@ This generates a `config.json`. Set your LLM provider and API key:
 {
   "llm": {
     "provider": "openrouter",
-    "model": "anthropic/claude-sonnet-4-20250514",
+    "model": "your-preferred-model",
     "api_key": "your-api-key"
   },
   "server": {
@@ -147,7 +147,7 @@ The LLM never sees tools above the player's permission tier. Admin tools don't e
 | Provider | Configuration | Notes |
 |----------|--------------|-------|
 | **OpenRouter** | `"provider": "openrouter"` | 200+ models, pay-per-token, recommended for flexibility |
-| **Anthropic** | `"provider": "anthropic"` | Claude models directly |
+| **Anthropic** | `"provider": "anthropic"` | Anthropic models directly |
 | **OpenAI** | `"provider": "openai"` | GPT-4o, GPT-4 Turbo |
 | **Google** | `"provider": "gemini"` | Gemini 2.0 Flash/Pro |
 
