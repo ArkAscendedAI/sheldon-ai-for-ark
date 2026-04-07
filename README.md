@@ -208,7 +208,7 @@ This project is in **active development**. The bridge server is functional and t
 - [x] Agentic loop (LLM → tool calls → execute → respond)
 - [x] WebSocket server with session management
 - [x] LLM provider abstraction (Anthropic, OpenAI, Google, OpenRouter via LiteLLM)
-- [x] Knowledge base: 686 dinos, 2,090 items, 618 engrams, 7 spawn maps
+- [x] Knowledge base: 1,119 dinos (686 vanilla + 433 Primal Nemesis), 2,090 items, 618 engrams, 7 spawn maps
 - [x] Fuzzy search with nickname/alias support (rapidfuzz)
 - [x] Semantic cache with local embeddings (zero-cost, 5ms lookups)
 - [x] Audit logging (JSONL)
