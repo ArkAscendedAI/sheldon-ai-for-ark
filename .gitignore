@@ -53,6 +53,13 @@ Binaries/
 .DS_Store
 Thumbs.db
 
+# Raw data (downloaded from third-party sources, rebuild via scripts)
+data/raw/
+
+# Generated sample/test files
+data/vanilla/dinos_sample.json
+data/vanilla/aliases_common.json
+
 # Claude Code
 .claude/
 CLAUDE.md
