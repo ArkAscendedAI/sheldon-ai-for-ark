@@ -48,26 +48,30 @@ def load_data(data_dirs: list[str]) -> None:
 
         # Load dino files
         for f in sorted(path.glob("dinos*.json")):
+            if "sample" in f.name:
+                continue
             try:
-                dinos = json.loads(f.read_text())
+                raw = json.loads(f.read_text())
+                # Handle both wrapped {"dinos": [...], "aliases": {...}} and raw list format
+                if isinstance(raw, dict):
+                    dinos = raw.get("dinos", [])
+                    _dino_aliases.update(raw.get("aliases", {}))
+                else:
+                    dinos = raw
                 _dino_db.extend(dinos)
                 logger.info(f"Loaded {len(dinos)} dinos from {f.name}")
-            except Exception as e:
-                logger.error(f"Failed to load {f}: {e}")
-
-        # Load alias files
-        for f in sorted(path.glob("aliases*.json")):
-            try:
-                aliases = json.loads(f.read_text())
-                _dino_aliases.update(aliases.get("dinos", {}))
-                logger.info(f"Loaded {len(aliases.get('dinos', {}))} dino aliases from {f.name}")
             except Exception as e:
                 logger.error(f"Failed to load {f}: {e}")
 
         # Load item files
         for f in sorted(path.glob("items*.json")):
             try:
-                items = json.loads(f.read_text())
+                raw = json.loads(f.read_text())
+                # Handle both wrapped {"items": [...]} and raw list format
+                if isinstance(raw, dict):
+                    items = raw.get("items", [])
+                else:
+                    items = raw
                 _item_db.extend(items)
                 logger.info(f"Loaded {len(items)} items from {f.name}")
             except Exception as e:

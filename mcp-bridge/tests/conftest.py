@@ -18,9 +18,9 @@ from sheldon_bridge.tools.registry import (
 )
 
 
-@pytest.fixture(autouse=True)
+@pytest.fixture()
 def clear_tool_registry():
-    """Clear the global tool registry between tests."""
+    """Clear the global tool registry between tests that register their own tools."""
     _registered_tools.clear()
     yield
     _registered_tools.clear()
@@ -173,7 +173,7 @@ def _register_test_tools():
 
 
 @pytest.fixture
-def test_tools():
+def test_tools(clear_tool_registry):
     return _register_test_tools()
 
 
