@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  sheldon-bridge:
+    build:
+      context: .
+      dockerfile: mcp-bridge/Dockerfile
+    container_name: sheldon-bridge
+    restart: unless-stopped
+    ports:
+      - "8443:8443"
+    volumes:
+      - ./config.json:/app/config.json:ro
+      - ./data/vanilla:/app/data/vanilla:ro
+      - ./data/custom:/app/data/custom:ro
+      - ./logs:/app/logs
+      - ./personality.md:/app/personality.md:ro
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      # Or for other providers:
+      # - OPENAI_API_KEY=${OPENAI_API_KEY}
+      # - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      # - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    # Optional: mount server context directory
+    # - ./server-context:/app/server-context:ro

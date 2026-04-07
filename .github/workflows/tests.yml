@@ -1,0 +1,62 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        working-directory: mcp-bridge
+        run: |
+          pip install -e ".[dev]"
+          pip install rapidfuzz
+
+      - name: Lint
+        working-directory: mcp-bridge
+        run: |
+          ruff check sheldon_bridge/ tests/
+          ruff format --check sheldon_bridge/ tests/
+
+      - name: Unit tests
+        working-directory: mcp-bridge
+        run: |
+          python -m pytest tests/test_permissions.py -v --timeout=30
+        # Integration tests skipped in CI (require API keys)
+        # Run manually with: pytest tests/test_integration.py
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ruff
+        run: pip install ruff
+
+      - name: Check formatting
+        working-directory: mcp-bridge
+        run: ruff format --check sheldon_bridge/ tests/
+
+      - name: Check linting
+        working-directory: mcp-bridge
+        run: ruff check sheldon_bridge/ tests/

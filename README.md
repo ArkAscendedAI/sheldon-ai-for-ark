@@ -198,22 +198,37 @@ Add JSON files to `data/custom/` for mod-specific dinos, items, or locations. Th
 
 ## Project Status
 
-This project is in **active development**. The architecture is designed and documented; implementation is underway.
+This project is in **active development**. The bridge server is functional and tested end-to-end. The in-game mod is next.
 
-- [x] Architecture design
-- [x] Permission model design
-- [x] Open-source structure
-- [ ] Bridge: Tool registry and provider abstraction
-- [ ] Bridge: Agentic loop and session management
-- [ ] Bridge: Permission enforcement
-- [ ] Bridge: WebSocket handler
-- [ ] Mod: DevKit project setup
-- [ ] Mod: WebSocket client (BPSecureNetworking)
-- [ ] Mod: Custom UI (UMG Widget)
-- [ ] Data: Vanilla dino/item/map knowledge base
-- [ ] Testing: Permission enforcement suite
-- [ ] Distribution: PyPI package
-- [ ] Distribution: CurseForge mod
+### Bridge Server
+- [x] Architecture design and documentation
+- [x] Permission model (tier-based tool partitioning, 55 tests passing)
+- [x] Token authentication and rate limiting
+- [x] Tool registry with wildcard patterns and inheritance
+- [x] Agentic loop (LLM → tool calls → execute → respond)
+- [x] WebSocket server with session management
+- [x] LLM provider abstraction (Anthropic, OpenAI, Google, OpenRouter via LiteLLM)
+- [x] Knowledge base: 686 dinos, 2,090 items, 618 engrams, 7 spawn maps
+- [x] Fuzzy search with nickname/alias support (rapidfuzz)
+- [x] Semantic cache with local embeddings (zero-cost, 5ms lookups)
+- [x] Audit logging (JSONL)
+- [x] Cache warm-up with common ARK Q&A
+- [x] End-to-end integration tests (4/4 passing with real LLM)
+- [x] Docker packaging
+- [x] GitHub Actions CI
+
+### In-Game Mod
+- [ ] DevKit project setup
+- [ ] WebSocket client (BPSecureNetworking)
+- [ ] Custom UI (UMG Widget — chat panel)
+- [ ] Game queries (player position, dino census, admin status)
+- [ ] Event hooks (player join/leave, tame, death)
+- [ ] CurseForge upload and cloud cooking
+
+### Distribution
+- [ ] PyPI package
+- [ ] Docker Hub / GHCR image
+- [ ] CurseForge mod listing
 
 ---
 
