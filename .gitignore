@@ -1,0 +1,58 @@
+# Secrets & credentials
+config.json
+.env
+*.pem
+*.key
+*.crt
+
+# Server-specific context (operator data, not source)
+my-server-context/
+server-context/
+custom-data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.whl
+.venv/
+venv/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Logs & runtime
+logs/
+*.log
+*.jsonl
+
+# UE5 / DevKit
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/
+Binaries/
+*.uproject.user
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
+CLAUDE.md

@@ -1,0 +1,81 @@
+{
+  "llm": {
+    "provider": "openrouter",
+    "model": "anthropic/claude-sonnet-4-20250514",
+    "api_key": "${SHELDON_LLM_API_KEY}",
+    "max_tokens": 4096,
+    "temperature": 0.7,
+    "max_tool_iterations": 25
+  },
+
+  "server": {
+    "name": "My ARK Server",
+    "websocket_host": "0.0.0.0",
+    "websocket_port": 8443,
+    "websocket_ssl_cert": null,
+    "websocket_ssl_key": null
+  },
+
+  "auth": {
+    "shared_secret": "${SHELDON_AUTH_SECRET}",
+    "timestamp_tolerance_seconds": 30,
+    "enable_nonce_check": true
+  },
+
+  "tiers": {
+    "player": {
+      "tools": [
+        "lookup_*", "calculate_*", "get_my_*",
+        "get_server_status", "get_server_rules",
+        "get_time_of_day", "get_weather"
+      ],
+      "rate_limit": {
+        "requests_per_minute": 10,
+        "tool_calls_per_minute": 5
+      }
+    },
+    "admin": {
+      "inherits": "player",
+      "tools": [
+        "census_*", "get_all_*", "get_player_info", "get_tribe_*",
+        "spawn_*", "give_*", "teleport_*", "set_*", "destroy_*",
+        "broadcast", "direct_message", "kick_player", "ban_player",
+        "execute_console_command", "trigger_save"
+      ],
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "tool_calls_per_minute": 20
+      },
+      "constraints": {
+        "spawn_dino": { "max_level": 500, "max_per_minute": 10 },
+        "give_item": { "max_quantity": 1000 },
+        "ban_player": { "max_duration_hours": 24 }
+      }
+    },
+    "superadmin": {
+      "inherits": "admin",
+      "tools": ["*"],
+      "rate_limit": {
+        "requests_per_minute": 60,
+        "tool_calls_per_minute": 40
+      }
+    }
+  },
+
+  "personality": {
+    "name": "Sheldon",
+    "prompt_file": "./personality.md",
+    "server_context_dir": null
+  },
+
+  "data": {
+    "dino_data_dirs": ["./data/vanilla", "./data/custom"],
+    "item_data_dirs": ["./data/vanilla", "./data/custom"],
+    "map_data_dirs": ["./data/vanilla", "./data/custom"]
+  },
+
+  "logging": {
+    "audit_file": "./logs/audit.jsonl",
+    "level": "INFO"
+  }
+}
