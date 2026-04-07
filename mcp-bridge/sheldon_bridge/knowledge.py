@@ -55,17 +55,21 @@ class KnowledgeBase:
             logger.warning(f"Data directory not found: {data_dir}")
             return
 
-        # Dinos
-        dino_file = data_dir / "dinos.json"
-        if dino_file.exists():
-            with open(dino_file) as f:
-                data = json.load(f)
-            new_dinos = data.get("dinos", [])
-            self.dinos.extend(new_dinos)
-            # Merge aliases
-            for alias, canonical in data.get("aliases", {}).items():
-                self._dino_aliases[alias.lower()] = canonical
-            logger.info(f"  Loaded {len(new_dinos)} dinos from {dino_file}")
+        # Dinos (load all dinos*.json files — vanilla + mod data)
+        for dino_file in sorted(data_dir.glob("dinos*.json")):
+            if "sample" in dino_file.name:
+                continue
+            try:
+                with open(dino_file) as f:
+                    data = json.load(f)
+                new_dinos = data.get("dinos", [])
+                self.dinos.extend(new_dinos)
+                # Merge aliases
+                for alias, canonical in data.get("aliases", {}).items():
+                    self._dino_aliases[alias.lower()] = canonical
+                logger.info(f"  Loaded {len(new_dinos)} dinos from {dino_file.name}")
+            except Exception as e:
+                logger.error(f"  Failed to load {dino_file.name}: {e}")
 
         # Items
         item_file = data_dir / "items.json"
