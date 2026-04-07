@@ -142,9 +142,19 @@ def load_config(path: str = DEFAULT_CONFIG_PATH) -> BridgeConfig:
 
     # Resolve env vars in LLM config
     llm_raw = raw.get("llm", {})
+    provider = llm_raw.get("provider", "openrouter")
+
+    # Default model per provider
+    default_models = {
+        "openrouter": "openrouter/anthropic/claude-sonnet-4-20250514",
+        "anthropic": "anthropic/claude-sonnet-4-20250514",
+        "openai": "openai/gpt-4o",
+        "gemini": "gemini/gemini-2.0-flash",
+    }
+
     llm_config = LLMConfig(
-        provider=llm_raw.get("provider", "anthropic"),
-        model=llm_raw.get("model", "claude-sonnet-4-20250514"),
+        provider=provider,
+        model=llm_raw.get("model", default_models.get(provider, "openrouter/anthropic/claude-sonnet-4-20250514")),
         api_key=_resolve_env_vars(llm_raw.get("api_key", "")),
         max_tokens=llm_raw.get("max_tokens", 4096),
         temperature=llm_raw.get("temperature", 0.7),
@@ -188,46 +198,96 @@ def load_config(path: str = DEFAULT_CONFIG_PATH) -> BridgeConfig:
 
 
 def initialize_config(path: str = DEFAULT_CONFIG_PATH) -> None:
-    """Create a new config file from the example template."""
+    """Interactive setup — generates a minimal config with sensible defaults.
+
+    The only things a user MUST provide:
+      1. LLM API key
+      2. LLM provider choice
+
+    Everything else has working defaults.
+    """
     config_path = Path(path)
     if config_path.exists():
         print(f"Config file already exists at {path}")
+        print(f"Delete it first if you want to re-initialize.")
         return
 
-    secret = TokenAuthenticator.generate_secret()
+    print("=" * 60)
+    print("  Sheldon AI for ARK — Bridge Setup")
+    print("=" * 60)
+    print()
 
+    # --- LLM Provider ---
+    print("Which LLM provider do you want to use?")
+    print()
+    print("  1. OpenRouter  (recommended — 200+ models, one API key)")
+    print("  2. Anthropic   (direct)")
+    print("  3. OpenAI      (direct)")
+    print("  4. Google      (Gemini)")
+    print()
+
+    provider_map = {
+        "1": ("openrouter", "OPENROUTER_API_KEY", "openrouter/anthropic/claude-sonnet-4-20250514"),
+        "2": ("anthropic", "ANTHROPIC_API_KEY", "anthropic/claude-sonnet-4-20250514"),
+        "3": ("openai", "OPENAI_API_KEY", "openai/gpt-4o"),
+        "4": ("gemini", "GOOGLE_API_KEY", "gemini/gemini-2.0-flash"),
+    }
+
+    choice = input("Choose [1-4, default=1]: ").strip() or "1"
+    if choice not in provider_map:
+        print(f"Invalid choice '{choice}', defaulting to OpenRouter.")
+        choice = "1"
+
+    provider, env_var, default_model = provider_map[choice]
+    print(f"  → Provider: {provider}")
+    print()
+
+    # --- API Key ---
+    print(f"Enter your API key (or press Enter to use ${{{env_var}}} env var):")
+    api_key_input = input("API key: ").strip()
+
+    if api_key_input:
+        api_key = api_key_input
+    else:
+        api_key = f"${{{env_var}}}"
+        print(f"  → Will read from {env_var} environment variable at runtime")
+    print()
+
+    # --- Generate shared secret ---
+    secret = TokenAuthenticator.generate_secret()
+    print(f"Generated shared secret for mod authentication.")
+    print(f"You will need to add this to your ARK server's GameUserSettings.ini:")
+    print()
+    print(f"  [SheldonAI]")
+    print(f"  WebSocketURL=wss://YOUR-BRIDGE-HOST:8443/sheldon")
+    print(f"  AuthSecret={secret}")
+    print()
+
+    # --- Build config (everything else is defaults) ---
     config = {
         "llm": {
-            "provider": "anthropic",
-            "model": "claude-sonnet-4-20250514",
-            "api_key": "${ANTHROPIC_API_KEY}",
-            "max_tokens": 4096,
-            "temperature": 0.7,
-            "max_tool_iterations": 25,
-        },
-        "server": {
-            "name": "My ARK Server",
-            "websocket_host": "0.0.0.0",
-            "websocket_port": 8443,
+            "provider": provider,
+            "model": default_model,
+            "api_key": api_key,
         },
         "auth": {
             "shared_secret": secret,
         },
-        "personality": {
-            "name": "Sheldon",
-            "prompt_file": None,
-            "server_context_dir": None,
-        },
-        "data": {
-            "dino_data_dirs": ["./data/vanilla", "./data/custom"],
-        },
-        "logging": {
-            "audit_file": "./logs/audit.jsonl",
-            "level": "INFO",
-        },
     }
 
-    config_path.write_text(json.dumps(config, indent=2))
-    print(f"Config created at {path}")
-    print(f"Generated shared secret: {secret}")
-    print(f"Set your API key: export ANTHROPIC_API_KEY=your-key-here")
+    # Write config
+    config_path.write_text(json.dumps(config, indent=2) + "\n")
+
+    # Create directories
+    Path("./data/custom").mkdir(parents=True, exist_ok=True)
+    Path("./logs").mkdir(parents=True, exist_ok=True)
+
+    print("=" * 60)
+    print(f"  Config saved to: {config_path}")
+    print()
+    print("  To start the bridge:")
+    print(f"    sheldon-bridge run")
+    print()
+    print("  All other settings use sensible defaults.")
+    print("  See examples/config.example.json for advanced options.")
+    print("=" * 60)

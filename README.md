@@ -91,20 +91,21 @@ docker pull ghcr.io/arkascendedai/sheldon-ai-for-ark:latest
 sheldon-bridge init
 ```
 
-This generates a `config.json`. Set your LLM provider and API key:
+Interactive setup asks only two things — your LLM provider and API key. Everything else has sensible defaults. The generated `config.json` is minimal:
 
 ```json
 {
   "llm": {
     "provider": "openrouter",
-    "model": "your-preferred-model",
-    "api_key": "your-api-key"
+    "api_key": "your-api-key-here"
   },
-  "server": {
-    "websocket_port": 8443
+  "auth": {
+    "shared_secret": "auto-generated-during-init"
   }
 }
 ```
+
+See `examples/config.advanced.json` for all available options.
 
 ### 3. Install the Mod
 
