@@ -1,0 +1,27 @@
+{
+  "dinos": {
+    "rexy": "Rex",
+    "t-rex": "Rex",
+    "trex": "Rex",
+    "tyrannosaurus": "Rex",
+    "yuty": "Yutyrannus",
+    "yuti": "Yutyrannus",
+    "furry rex": "Yutyrannus",
+    "fluffy rex": "Yutyrannus",
+    "feather rex": "Yutyrannus",
+    "tickle chicken": "Therizinosaurus",
+    "murder chicken": "Therizinosaurus",
+    "fear turkey": "Therizinosaurus",
+    "theri": "Therizinosaurus",
+    "therizino": "Therizinosaurus",
+    "ptera": "Pteranodon",
+    "pt": "Pteranodon",
+    "argy": "Argentavis",
+    "argent": "Argentavis",
+    "giga": "Giganotosaurus",
+    "giganoto": "Giganotosaurus",
+    "turtle": "Carbonemys",
+    "turt": "Carbonemys",
+    "carbon": "Carbonemys"
+  }
+}
