@@ -141,9 +141,9 @@ A dedicated Sheldon UI triggered by keybind (e.g., F8) or radial menu entry:
 **Configuration via GameUserSettings.ini:**
 ```ini
 [SheldonAI]
-WebSocketURL=wss://devops.local:8443/ark
-AuthToken=<generated-secret>
-ServerName=Ark01-Ragnarok
+WebSocketURL=wss://your-bridge-host:8443/sheldon
+AuthSecret=<generated-secret>
+ServerName=My ARK Server
 EnableUI=true
 UIKeybind=F8
 EnableChatCommands=true
