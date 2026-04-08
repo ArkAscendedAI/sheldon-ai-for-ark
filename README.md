@@ -42,8 +42,8 @@ An open-source, in-game AI assistant for **ARK: Survival Ascended**. Give every 
 ```
 ┌─────────────────┐         ┌──────────────────┐         ┌───────────────┐
 │  SheldonAI Mod  │◄═══════►│  Sheldon Bridge  │◄═══════►│  LLM Provider │
-│  (in-game)      │  WebSocket  │  (Python server) │  HTTPS  │  (your choice)│
-│                 │  JSON    │                  │         │               │
+│  (in-game)      │WebSocket│  (Python server) │  HTTPS  │  (your choice)│
+│                 │  JSON   │                  │         │               │
 │  Custom UI      │         │  Permission      │         │  Any LLM      │
 │  Game queries   │         │  enforcement     │         │  GPT-4o       │
 │  Event hooks    │         │  Agentic loop    │         │  Gemini       │
