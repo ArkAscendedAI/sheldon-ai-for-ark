@@ -199,9 +199,9 @@ Add JSON files to `data/custom/` for mod-specific dinos, items, or locations. Th
 
 ## Project Status
 
-This project is in **active development**. The bridge server is functional and tested end-to-end. The in-game mod is next.
+This project is in **active development**. The bridge server is complete and tested. The in-game mod core is built and functional — currently in end-to-end testing.
 
-### Bridge Server
+### Bridge Server ✅
 - [x] Architecture design and documentation
 - [x] Permission model (tier-based tool partitioning, 55 tests passing)
 - [x] Token authentication and rate limiting
@@ -218,10 +218,12 @@ This project is in **active development**. The bridge server is functional and t
 - [x] Docker packaging
 - [x] GitHub Actions CI
 
-### In-Game Mod
-- [ ] DevKit project setup
-- [ ] WebSocket client (BPSecureNetworking)
-- [ ] Custom UI (UMG Widget — chat panel)
+### In-Game Mod (in testing)
+- [x] DevKit project setup
+- [x] WebSocket client (BPSecureNetworking via VictoryCore)
+- [x] Custom UI (UMG Widget — chat panel with F8 toggle)
+- [x] Server-authoritative networking (NetExec client↔server RPC)
+- [ ] Display response in chat UI
 - [ ] Game queries (player position, dino census, admin status)
 - [ ] Event hooks (player join/leave, tame, death)
 - [ ] CurseForge upload and cloud cooking

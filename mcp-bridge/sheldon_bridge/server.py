@@ -187,15 +187,21 @@ class BridgeServer:
         if pos:
             session.player.update_position(pos, msg.get("facing_yaw", 0.0))
 
+        # Echo request_id from client (for server-side request tracking)
+        request_id = msg.get("request_id")
+
         # Send "thinking" indicator
-        await websocket.send(json.dumps({"type": "thinking"}))
+        thinking_msg = {"type": "thinking"}
+        if request_id is not None:
+            thinking_msg["request_id"] = request_id
+        await websocket.send(json.dumps(thinking_msg))
 
         # Run the agentic loop
         async with session.lock:
             result = await self.agent.run(session, text)
 
-        # Send response
-        await websocket.send(json.dumps({
+        # Send response (echo request_id for server-side routing)
+        reply_msg = {
             "type": "reply",
             "message": result.response_text,
             "stats": {
@@ -206,7 +212,10 @@ class BridgeServer:
                 "cost": round(result.total_cost, 6),
                 "duration_ms": round(result.duration_ms, 1),
             },
-        }))
+        }
+        if request_id is not None:
+            reply_msg["request_id"] = request_id
+        await websocket.send(json.dumps(reply_msg))
 
         logger.info(
             f"[{session.player.display_name}] "
