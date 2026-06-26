@@ -1,0 +1,4334 @@
+{
+  "version": "0.1.0",
+  "source": "arkutils/Obelisk",
+  "game": "ASA",
+  "count": 618,
+  "engrams": [
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_BasiliskSaddle.EngramEntry_BasiliskSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_ChargeBattery.EngramEntry_ChargeBattery_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_ChargeLantern.EngramEntry_ChargeLantern_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_ClimbingPick.EngramEntry_ClimbingPick_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_Fishbasket.EngramEntry_Fishbasket_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_GasCollector.EngramEntry_GasCollector_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_Glider.EngramEntry_Glider_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_Glowstick.EngramEntry_Glowstick_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_HazardSuit_Boots.EngramEntry_HazardSuit_Boots_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_HazardSuit_Chest.EngramEntry_HazardSuit_Chest_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_HazardSuit_Gloves.EngramEntry_HazardSuit_Gloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_HazardSuit_Helmet.EngramEntry_HazardSuit_Helmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_HazardSuit_Pants.EngramEntry_HazardSuit_Pants_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_KarkinoSaddle.EngramEntry_KarkinoSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_MetalCliffPlatform.EngramEntry_MetalCliffPlatform_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_Pliers.EngramEntry_Pliers_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_PortableRopeLadder.EngramEntry_PortableRopeLadder_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_RavagerSaddle.EngramEntry_RavagerSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_RollratSaddle.EngramEntry_RollratSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_ShadowDrakeSaddle.EngramEntry_ShadowDrakeSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_ShagRug.EngramEntry_ShagRug_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_StoneCliffPlatform.EngramEntry_StoneCliffPlatform_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_TekRockDrakeSaddle.EngramEntry_TekRockDrakeSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_TekSniper.EngramEntry_TekSniper_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_WoodElevatorPlatform_Large.EngramEntry_WoodElevatorPlatform_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_WoodElevatorPlatform_Medium.EngramEntry_WoodElevatorPlatform_Medium_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_WoodElevatorPlatform_Small.EngramEntry_WoodElevatorPlatform_Small_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_WoodElevator_Switch.EngramEntry_WoodElevator_Switch_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_WoodElevator_Track.EngramEntry_WoodElevator_Track_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_ZiplineAmmo.EngramEntry_ZiplineAmmo_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/CoreBlueprints/Engrams/EngramEntry_ZiplineMotor.EngramEntry_ZiplineMotor_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Aberration/WeaponGlowStickThrow/EngramEntry_GlowStick.EngramEntry_GlowStick_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_CryoFridge.EngramEntry_CryoFridge_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_DinoLeash.EngramEntry_DinoLeash_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_EmptyCryopod.EngramEntry_EmptyCryopod_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_GachaSaddle.EngramEntry_GachaSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_GasBagsSaddle.EngramEntry_GasBagsSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_IceJumperSaddle.EngramEntry_IceJumperSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_MekBackpack_Cannon.EngramEntry_MekBackpack_Cannon_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_MekBackpack_Missiles.EngramEntry_MekBackpack_Missiles_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_MekBackpack_Shield.EngramEntry_MekBackpack_Shield_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_MekCannonShell.EngramEntry_MekCannonShell_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_MekRocketPod.EngramEntry_MekRocketPod_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_MekSpawner.EngramEntry_MekSpawner_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_OwlSaddle.EngramEntry_OwlSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_RefinedElement.EngramEntry_RefinedElement_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_RefinedShards.EngramEntry_RefinedShards_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_SpindlesSaddle.EngramEntry_SpindlesSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_StorageBox_Balloon.EngramEntry_StorageBox_Balloon_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_TaxidermyBase_Large.EngramEntry_TaxidermyBase_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_TaxidermyBase_Medium.EngramEntry_TaxidermyBase_Medium_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_TaxidermyBase_Small.EngramEntry_TaxidermyBase_Small_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_TaxidermyTool.EngramEntry_TaxidermyTool_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_TekBridge.EngramEntry_TekBridge_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Extinction/CoreBlueprints/Engrams/EngramEntry_TekGravityGrenade.EngramEntry_TekGravityGrenade_C",
+      "level": 0,
+      "points": 0,
+      "group": "Extinction"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Fjordur/Dinos/Andrewsarchus/EngramEntry_Saddle_Andrewsarchus.EngramEntry_Saddle_Andrewsarchus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Fjordur/Dinos/Desmodus/EngramEntry_Saddle_Desmodus.EngramEntry_Saddle_Desmodus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_CherufeSaddle.EngramEntry_CherufeSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_CruiseMissile.EngramEntry_CruiseMissile_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_FishingNet.EngramEntry_FishingNet_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_GiantTurtleSaddle.EngramEntry_GiantTurtleSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_HoverSkiff.EngramEntry_HoverSkiff_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_JumpPad.EngramEntry_JumpPad_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_MiningDrill.EngramEntry_MiningDrill_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_OceanPlatformMetal.EngramEntry_OceanPlatformMetal_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_OceanPlatformWood.EngramEntry_OceanPlatformWood_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_PressurePlate.EngramEntry_PressurePlate_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_ShoulderCannon.EngramEntry_ShoulderCannon_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_TekAlarm.EngramEntry_TekAlarm_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_TekClaws.EngramEntry_TekClaws_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_TekGrenadeLauncher.EngramEntry_TekGrenadeLauncher_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis/CoreBlueprints/Engrams/EngramEntry_TekSpaceWhaleSaddle.EngramEntry_TekSpaceWhaleSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "Genesis"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_AmmoBox.EngramEntry_AmmoBox_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_Boulder_Fire.EngramEntry_Boulder_Fire_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_Canoe.EngramEntry_Canoe_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_EggIncubator.EngramEntry_EggIncubator_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_LoadoutMannequin.EngramEntry_LoadoutMannequin_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_Milkglider_Saddle.EngramEntry_Milkglider_Saddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_Minigun.EngramEntry_Minigun_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_NetGun_Ammo.EngramEntry_NetGun_Ammo_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_SpaceDolphin_Saddle.EngramEntry_SpaceDolphin_Saddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_TekBow.EngramEntry_TekBow_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_TekCanteen.EngramEntry_TekCanteen_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_TekCropPlot.EngramEntry_TekCropPlot_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_TekExosuit.EngramEntry_TekExosuit_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_TekHoverSail.EngramEntry_TekHoverSail_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_TekPistol.EngramEntry_TekPistol_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/Genesis2/CoreBlueprints/Engrams/EngramEntry_TekSecuirtyConsole.EngramEntry_TekSecuirtyConsole_C",
+      "level": 0,
+      "points": 0,
+      "group": "ARK_GEN2"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/LostIsland/Dinos/Amargasaurus/EngramEntry_Saddle_Amarga.EngramEntry_Saddle_Amarga_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_AdvancedBullet.EngramEntry_AdvancedBullet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_AdvancedRifleBullet.EngramEntry_AdvancedRifleBullet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_AdvancedSniperBullet.EngramEntry_AdvancedSniperBullet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_AggroTranqDart.EngramEntry_AggroTranqDart_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_AirConditioner.EngramEntry_AirConditioner_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_AlarmTrap.EngramEntry_AlarmTrap_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_AnvilBench.EngramEntry_AnvilBench_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ArrowStone.EngramEntry_ArrowStone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ArrowTranq.EngramEntry_ArrowTranq_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_BallistaArrow.EngramEntry_BallistaArrow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_BallistaTurret.EngramEntry_BallistaTurret_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_BearTrap.EngramEntry_BearTrap_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_BearTrap_Large.EngramEntry_BearTrap_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_BeerBarrel.EngramEntry_BeerBarrel_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_BloodExtractor.EngramEntry_BloodExtractor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Bola.EngramEntry_Bola_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Bookshelf.EngramEntry_Bookshelf_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Bow.EngramEntry_Bow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_BugRepel.EngramEntry_BugRepel_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_C4Ammo.EngramEntry_C4Ammo_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Camera.EngramEntry_Camera_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Campfire.EngramEntry_Campfire_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Cannon.EngramEntry_Cannon_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CannonBall.EngramEntry_CannonBall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Canteen.EngramEntry_Canteen_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CatapultTurret.EngramEntry_CatapultTurret_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ChainBola.EngramEntry_ChainBola_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ChemBench.EngramEntry_ChemBench_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ChitinBoots.EngramEntry_ChitinBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ChitinGloves.EngramEntry_ChitinGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ChitinHelmet.EngramEntry_ChitinHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ChitinPants.EngramEntry_ChitinPants_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ChitinPaste.EngramEntry_ChitinPaste_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ChitinShirt.EngramEntry_ChitinShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ClothBoots.EngramEntry_ClothBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ClothGloves.EngramEntry_ClothGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ClothHelmet.EngramEntry_ClothHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ClothPants.EngramEntry_ClothPants_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ClothShirt.EngramEntry_ClothShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Compass.EngramEntry_Compass_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CompostBin.EngramEntry_CompostBin_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CompoundArrow.EngramEntry_CompoundArrow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CompoundBow.EngramEntry_CompoundBow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CookingPot.EngramEntry_CookingPot_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CropPlot_Large.EngramEntry_CropPlot_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CropPlot_Medium.EngramEntry_CropPlot_Medium_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CropPlot_Small.EngramEntry_CropPlot_Small_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Crossbow.EngramEntry_Crossbow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_CureLow.EngramEntry_CureLow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ElectricProd.EngramEntry_ElectricProd_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Electronics.EngramEntry_Electronics_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ElevatorPlatformLarge.EngramEntry_ElevatorPlatformLarge_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ElevatorPlatformMedium.EngramEntry_ElevatorPlatformMedium_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ElevatorPlatformSmall.EngramEntry_ElevatorPlatformSmall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ElevatorTrack.EngramEntry_ElevatorTrack_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Fabricator.EngramEntry_Fabricator_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FeedingTrough.EngramEntry_FeedingTrough_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Fireplace.EngramEntry_Fireplace_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FishingRod.EngramEntry_FishingRod_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Flag.EngramEntry_Flag_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FlagSingle.EngramEntry_FlagSingle_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FlareLauncher.EngramEntry_FlareLauncher_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Flashlight.EngramEntry_Flashlight_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Forge.EngramEntry_Forge_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FurBoots.EngramEntry_FurBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FurGloves.EngramEntry_FurGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FurHelmet.EngramEntry_FurHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FurPants.EngramEntry_FurPants_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_FurShirt.EngramEntry_FurShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Furniture_WoodTable.EngramEntry_Furniture_WoodTable_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GPS.EngramEntry_GPS_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GasGrenade.EngramEntry_GasGrenade_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GasMask.EngramEntry_GasMask_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GhillieBoots.EngramEntry_GhillieBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GhillieGloves.EngramEntry_GhillieGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GhillieHelmet.EngramEntry_GhillieHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GhilliePants.EngramEntry_GhilliePants_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GhillieShirt.EngramEntry_GhillieShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GrapplingHook.EngramEntry_GrapplingHook_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Gravestone.EngramEntry_Gravestone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GreenhouseCeiling.EngramEntry_GreenhouseCeiling_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GreenhouseDoor.EngramEntry_GreenhouseDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GreenhouseRoof.EngramEntry_GreenhouseRoof_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GreenhouseSlopedWall_Left.EngramEntry_GreenhouseSlopedWall_Left_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GreenhouseSlopedWall_Right.EngramEntry_GreenhouseSlopedWall_Right_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GreenhouseWall.EngramEntry_GreenhouseWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GreenhouseWallWithDoor.EngramEntry_GreenhouseWallWithDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_GreenhouseWindow.EngramEntry_GreenhouseWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Grenade.EngramEntry_Grenade_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Grill.EngramEntry_Grill_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Grinder.EngramEntry_Grinder_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Gunpowder.EngramEntry_Gunpowder_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Handcuffs.EngramEntry_Handcuffs_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HarpoonGun.EngramEntry_HarpoonGun_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HeavyTurret.EngramEntry_HeavyTurret_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HideBoots.EngramEntry_HideBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HideGloves.EngramEntry_HideGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HideHelmet.EngramEntry_HideHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HidePants.EngramEntry_HidePants_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HideShirt.EngramEntry_HideShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HideSleepingBag.EngramEntry_HideSleepingBag_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_HoloScope.EngramEntry_HoloScope_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_IceBox.EngramEntry_IceBox_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_IndustrialCookingPot.EngramEntry_IndustrialCookingPot_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_IndustrialForge.EngramEntry_IndustrialForge_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Keypad.EngramEntry_Keypad_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Lamppost.EngramEntry_Lamppost_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_LamppostOmni.EngramEntry_LamppostOmni_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Lance.EngramEntry_Lance_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Laser.EngramEntry_Laser_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MachinedPistol.EngramEntry_MachinedPistol_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MachinedRifle.EngramEntry_MachinedRifle_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MachinedShotgun.EngramEntry_MachinedShotgun_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MachinedSniper.EngramEntry_MachinedSniper_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MagnifyingGlass.EngramEntry_MagnifyingGlass_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalBoots.EngramEntry_MetalBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalCatwalk.EngramEntry_MetalCatwalk_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalCeiling.EngramEntry_MetalCeiling_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalCeilingWithTrapdoor.EngramEntry_MetalCeilingWithTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalCeilingWithTrapdoorGiant.EngramEntry_MetalCeilingWithTrapdoorGiant_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalDoor.EngramEntry_MetalDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalFenceFoundation.EngramEntry_MetalFenceFoundation_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalFloor.EngramEntry_MetalFloor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalGate.EngramEntry_MetalGate_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalGate_Large.EngramEntry_MetalGate_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalGateway.EngramEntry_MetalGateway_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalGateway_Large.EngramEntry_MetalGateway_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalGloves.EngramEntry_MetalGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalHatchet.EngramEntry_MetalHatchet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalHelmet.EngramEntry_MetalHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalLadder.EngramEntry_MetalLadder_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPants.EngramEntry_MetalPants_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPick.EngramEntry_MetalPick_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPillar.EngramEntry_MetalPillar_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPipeIncline.EngramEntry_MetalPipeIncline_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPipeIntake.EngramEntry_MetalPipeIntake_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPipeIntersection.EngramEntry_MetalPipeIntersection_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPipeStraight.EngramEntry_MetalPipeStraight_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPipeTap.EngramEntry_MetalPipeTap_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalPipeVertical.EngramEntry_MetalPipeVertical_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalRailing.EngramEntry_MetalRailing_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalRamp.EngramEntry_MetalRamp_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalRoof.EngramEntry_MetalRoof_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalShield.EngramEntry_MetalShield_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalShirt.EngramEntry_MetalShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalSickle.EngramEntry_MetalSickle_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalSign.EngramEntry_MetalSign_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalSign_Large.EngramEntry_MetalSign_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalSign_Wall.EngramEntry_MetalSign_Wall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalSlopedWall_Left.EngramEntry_MetalSlopedWall_Left_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalSlopedWall_Right.EngramEntry_MetalSlopedWall_Right_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalSpikeWall.EngramEntry_MetalSpikeWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalStairs.EngramEntry_MetalStairs_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalTrapdoor.EngramEntry_MetalTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalTrapdoorGiant.EngramEntry_MetalTrapdoorGiant_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalWall.EngramEntry_MetalWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalWallWithDoor.EngramEntry_MetalWallWithDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalWallWithWindow.EngramEntry_MetalWallWithWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MetalWindow.EngramEntry_MetalWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MinersHelmet.EngramEntry_MinersHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MinigunTurret.EngramEntry_MinigunTurret_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MiracleGro.EngramEntry_MiracleGro_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ModernBed.EngramEntry_ModernBed_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_MortarAndPestle.EngramEntry_MortarAndPestle_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Motorboat.EngramEntry_Motorboat_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Narcotic.EngramEntry_Narcotic_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_NightVisionGoggles.EngramEntry_NightVisionGoggles_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_NotePaper.EngramEntry_NotePaper_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Paintbrush.EngramEntry_Paintbrush_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PaintingCanvas.EngramEntry_PaintingCanvas_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Parachute.EngramEntry_Parachute_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Pike.EngramEntry_Pike_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Pistol.EngramEntry_Pistol_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PoisonGrenade.EngramEntry_PoisonGrenade_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PoisonTrap.EngramEntry_PoisonTrap_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Polymer.EngramEntry_Polymer_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PowerCableIncline.EngramEntry_PowerCableIncline_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PowerCableIntersection.EngramEntry_PowerCableIntersection_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PowerCableStraight.EngramEntry_PowerCableStraight_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PowerCableVertical.EngramEntry_PowerCableVertical_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PowerGenerator.EngramEntry_PowerGenerator_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PowerOutlet.EngramEntry_PowerOutlet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_PreservingBin.EngramEntry_PreservingBin_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Radio.EngramEntry_Radio_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Raft.EngramEntry_Raft_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RefinedTranqDart.EngramEntry_RefinedTranqDart_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RiotBoots.EngramEntry_RiotBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RiotGloves.EngramEntry_RiotGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RiotHelmet.EngramEntry_RiotHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RiotPants.EngramEntry_RiotPants_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RiotShield.EngramEntry_RiotShield_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RiotShirt.EngramEntry_RiotShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RocketAmmo.EngramEntry_RocketAmmo_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RocketLauncher.EngramEntry_RocketLauncher_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RocketTurret.EngramEntry_RocketTurret_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_RopeLadder.EngramEntry_RopeLadder_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Allo.EngramEntry_Saddle_Allo_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Ankylo.EngramEntry_Saddle_Ankylo_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Argentavis.EngramEntry_Saddle_Argentavis_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Arthro.EngramEntry_Saddle_Arthro_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Baryonyx.EngramEntry_Saddle_Baryonyx_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Basilosaurus.EngramEntry_Saddle_Basilosaurus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Beaver.EngramEntry_Saddle_Beaver_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Carcha.EngramEntry_Saddle_Carcha_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Carno.EngramEntry_Saddle_Carno_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Chalico.EngramEntry_Saddle_Chalico_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Daeodon.EngramEntry_Saddle_Daeodon_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Deinonychus.EngramEntry_Saddle_Deinonychus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Diplodocus.EngramEntry_Saddle_Diplodocus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Direbear.EngramEntry_Saddle_Direbear_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Doed.EngramEntry_Saddle_Doed_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Dolphin.EngramEntry_Saddle_Dolphin_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Dunkle.EngramEntry_Saddle_Dunkle_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Equus.EngramEntry_Saddle_Equus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Galli.EngramEntry_Saddle_Galli_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Gigant.EngramEntry_Saddle_Gigant_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Hyaenodon.EngramEntry_Saddle_Hyaenodon_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Iguanodon.EngramEntry_Saddle_Iguanodon_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Kaprosuchus.EngramEntry_Saddle_Kaprosuchus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Mammoth.EngramEntry_Saddle_Mammoth_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Manta.EngramEntry_Saddle_Manta_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Megalania.EngramEntry_Saddle_Megalania_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Megalodon.EngramEntry_Saddle_Megalodon_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Megalosaurus.EngramEntry_Saddle_Megalosaurus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Megatherium.EngramEntry_Saddle_Megatherium_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Mosa.EngramEntry_Saddle_Mosa_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Mosa_Platform.EngramEntry_Saddle_Mosa_Platform_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Pachy.EngramEntry_Saddle_Pachy_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_PachyRhino.EngramEntry_Saddle_PachyRhino_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Para.EngramEntry_Saddle_Para_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Paracer.EngramEntry_Saddle_Paracer_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Paracer_Platform.EngramEntry_Saddle_Paracer_Platform_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Pela.EngramEntry_Saddle_Pela_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Phiomia.EngramEntry_Saddle_Phiomia_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Plesia.EngramEntry_Saddle_Plesia_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Plesio_Platform.EngramEntry_Saddle_Plesio_Platform_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Procop.EngramEntry_Saddle_Procop_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Ptero.EngramEntry_Saddle_Ptero_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Quetz.EngramEntry_Saddle_Quetz_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Quetz_Platform.EngramEntry_Saddle_Quetz_Platform_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Raptor.EngramEntry_Saddle_Raptor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Rex.EngramEntry_Saddle_Rex_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Rhino.EngramEntry_Saddle_Rhino_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Rhynio.EngramEntry_Saddle_Rhynio_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Saber.EngramEntry_Saddle_Saber_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Sarco.EngramEntry_Saddle_Sarco_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Sauro.EngramEntry_Saddle_Sauro_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Sauro_Platform.EngramEntry_Saddle_Sauro_Platform_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Scorpion.EngramEntry_Saddle_Scorpion_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Spider.EngramEntry_Saddle_Spider_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Spino.EngramEntry_Saddle_Spino_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Stag.EngramEntry_Saddle_Stag_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Stego.EngramEntry_Saddle_Stego_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Tapejara.EngramEntry_Saddle_Tapejara_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_TerrorBird.EngramEntry_Saddle_TerrorBird_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Therizino.EngramEntry_Saddle_Therizino_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Thylaco.EngramEntry_Saddle_Thylaco_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Titano_Platform.EngramEntry_Saddle_Titano_Platform_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Toad.EngramEntry_Saddle_Toad_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Trike.EngramEntry_Saddle_Trike_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Tropeognathus.EngramEntry_Saddle_Tropeognathus_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Turtle.EngramEntry_Saddle_Turtle_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Tuso.EngramEntry_Saddle_Tuso_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Saddle_Yuty.EngramEntry_Saddle_Yuty_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Scissors.EngramEntry_Scissors_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Scope.EngramEntry_Scope_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ScubaBoots_Flippers.EngramEntry_ScubaBoots_Flippers_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ScubaHelmet_Goggles.EngramEntry_ScubaHelmet_Goggles_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ScubaPants.EngramEntry_ScubaPants_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ScubaShirt_SuitWithTank.EngramEntry_ScubaShirt_SuitWithTank_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SeaMine.EngramEntry_SeaMine_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Silencer.EngramEntry_Silencer_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SimpleBed.EngramEntry_SimpleBed_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SimpleBullet.EngramEntry_SimpleBullet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SimpleRifle.EngramEntry_SimpleRifle_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SimpleRifleBullet.EngramEntry_SimpleRifleBullet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SimpleShotgun.EngramEntry_SimpleShotgun_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SimpleShotgunBullet.EngramEntry_SimpleShotgunBullet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Slingshot.EngramEntry_Slingshot_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Sparkpowder.EngramEntry_Sparkpowder_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Spear.EngramEntry_Spear_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SprayPainter.EngramEntry_SprayPainter_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Spyglass.EngramEntry_Spyglass_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StandingTorch.EngramEntry_StandingTorch_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Stimulant.EngramEntry_Stimulant_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneCeiling.EngramEntry_StoneCeiling_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneCeilingWithTrapdoor.EngramEntry_StoneCeilingWithTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneCeilingWithTrapdoorGiant.EngramEntry_StoneCeilingWithTrapdoorGiant_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneClub.EngramEntry_StoneClub_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneDoor.EngramEntry_StoneDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneFenceFoundation.EngramEntry_StoneFenceFoundation_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneFloor.EngramEntry_StoneFloor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneGate.EngramEntry_StoneGate_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneGateLarge.EngramEntry_StoneGateLarge_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneGateway.EngramEntry_StoneGateway_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneGateway_Large.EngramEntry_StoneGateway_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneHatchet.EngramEntry_StoneHatchet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StonePick.EngramEntry_StonePick_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StonePillar.EngramEntry_StonePillar_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StonePipeInclined.EngramEntry_StonePipeInclined_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StonePipeIntake.EngramEntry_StonePipeIntake_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StonePipeIntersection.EngramEntry_StonePipeIntersection_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StonePipeStraight.EngramEntry_StonePipeStraight_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StonePipeTap.EngramEntry_StonePipeTap_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StonePipeVertical.EngramEntry_StonePipeVertical_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneRailing.EngramEntry_StoneRailing_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneRoof.EngramEntry_StoneRoof_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneSlopedWall_Left.EngramEntry_StoneSlopedWall_Left_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneSlopedWall_Right.EngramEntry_StoneSlopedWall_Right_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneStairs.EngramEntry_StoneStairs_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneTrapdoor.EngramEntry_StoneTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneTrapdoorGiant.EngramEntry_StoneTrapdoorGiant_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneWall.EngramEntry_StoneWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneWallWithDoor.EngramEntry_StoneWallWithDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneWallWithWindow.EngramEntry_StoneWallWithWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StoneWindow.EngramEntry_StoneWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StorageBox_Huge.EngramEntry_StorageBox_Huge_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StorageBox_Large.EngramEntry_StorageBox_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_StorageBox_Small.EngramEntry_StorageBox_Small_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_SubstrateAbsorbent.EngramEntry_SubstrateAbsorbent_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Sword.EngramEntry_Sword_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekATV.EngramEntry_TekATV_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekBoots.EngramEntry_TekBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekGenerator.EngramEntry_TekGenerator_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekGloves.EngramEntry_TekGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekGrenade.EngramEntry_TekGrenade_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekHelmet.EngramEntry_TekHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekLight.EngramEntry_TekLight_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekMegalodonSaddle.EngramEntry_TekMegalodonSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekMosaSaddle.EngramEntry_TekMosaSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekPants.EngramEntry_TekPants_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekReplicator.EngramEntry_TekReplicator_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekRexSaddle.EngramEntry_TekRexSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekRifle.EngramEntry_TekRifle_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekShield.EngramEntry_TekShield_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekShieldArmor.EngramEntry_TekShieldArmor_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekShirt.EngramEntry_TekShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekSword.EngramEntry_TekSword_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekTapejaraSaddle.EngramEntry_TekTapejaraSaddle_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekTeleporter.EngramEntry_TekTeleporter_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekTransmitter.EngramEntry_TekTransmitter_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TekTrough.EngramEntry_TekTrough_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ThatchCeiling.EngramEntry_ThatchCeiling_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ThatchDoor.EngramEntry_ThatchDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ThatchFloor.EngramEntry_ThatchFloor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ThatchRoof.EngramEntry_ThatchRoof_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ThatchSlopedWall_Right.EngramEntry_ThatchSlopedWall_Right_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ThatchSlopedWall_left.EngramEntry_ThatchSlopedWall_left_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ThatchWall.EngramEntry_ThatchWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_ThatchWallWithDoor.EngramEntry_ThatchWallWithDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Toilet.EngramEntry_Toilet_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Torch.EngramEntry_Torch_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TrainingDummy.EngramEntry_TrainingDummy_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TranqDart.EngramEntry_TranqDart_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TranqSpearBolt.EngramEntry_TranqSpearBolt_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TransGPS.EngramEntry_TransGPS_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TransGPSAmmo.EngramEntry_TransGPSAmmo_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TreePlatformMetal.EngramEntry_TreePlatformMetal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TreePlatformWood.EngramEntry_TreePlatformWood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TreeSapTap.EngramEntry_TreeSapTap_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TripwireC4.EngramEntry_TripwireC4_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TrophyBase.EngramEntry_TrophyBase_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TrophyWall.EngramEntry_TrophyWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Turret.EngramEntry_Turret_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_TurretTek.EngramEntry_TurretTek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WallTorch.EngramEntry_WallTorch_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WarMap.EngramEntry_WarMap_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Wardrums.EngramEntry_Wardrums_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WaterJar.EngramEntry_WaterJar_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WaterTank.EngramEntry_WaterTank_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WaterTankMetal.EngramEntry_WaterTankMetal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_Waterskin.EngramEntry_Waterskin_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WeaponC4.EngramEntry_WeaponC4_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodBench.EngramEntry_WoodBench_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodCage.EngramEntry_WoodCage_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodCatwalk.EngramEntry_WoodCatwalk_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodCeiling.EngramEntry_WoodCeiling_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodCeilingWithTrapdoor.EngramEntry_WoodCeilingWithTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodChair.EngramEntry_WoodChair_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodDoor.EngramEntry_WoodDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodFenceFoundation.EngramEntry_WoodFenceFoundation_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodFloor.EngramEntry_WoodFloor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodGate.EngramEntry_WoodGate_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodGateway.EngramEntry_WoodGateway_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodLadder.EngramEntry_WoodLadder_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodPillar.EngramEntry_WoodPillar_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodRailing.EngramEntry_WoodRailing_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodRamp.EngramEntry_WoodRamp_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodRoof.EngramEntry_WoodRoof_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodShield.EngramEntry_WoodShield_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodSign.EngramEntry_WoodSign_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodSign_Large.EngramEntry_WoodSign_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodSign_Wall.EngramEntry_WoodSign_Wall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodSlopedWall_Left.EngramEntry_WoodSlopedWall_Left_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodSlopedWall_Right.EngramEntry_WoodSlopedWall_Right_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodSpikeWall.EngramEntry_WoodSpikeWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodStairs.EngramEntry_WoodStairs_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodTrapdoor.EngramEntry_WoodTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodWall.EngramEntry_WoodWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodWallWithDoor.EngramEntry_WoodWallWithDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodWallWithWindow.EngramEntry_WoodWallWithWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/EngramEntry_WoodWindow.EngramEntry_WoodWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekBed.EngramEntry_TekBed_C",
+      "level": 0,
+      "points": 0,
+      "group": "Aberration"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekCatwalk.EngramEntry_TekCatwalk_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekCeiling.EngramEntry_TekCeiling_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekCeilingWithTrapdoor.EngramEntry_TekCeilingWithTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekCloningChamber.EngramEntry_TekCloningChamber_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekDoor.EngramEntry_TekDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekFenceFoundation.EngramEntry_TekFenceFoundation_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekFloor.EngramEntry_TekFloor_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekLadder.EngramEntry_TekLadder_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekPillar.EngramEntry_TekPillar_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekRailing.EngramEntry_TekRailing_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekRamp.EngramEntry_TekRamp_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekRoof.EngramEntry_TekRoof_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekSlopedWall_Left.EngramEntry_TekSlopedWall_Left_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekSlopedWall_Right.EngramEntry_TekSlopedWall_Right_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekStairs.EngramEntry_TekStairs_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekTrapdoor.EngramEntry_TekTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekUnderwaterBase.EngramEntry_TekUnderwaterBase_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekUnderwaterBase_BottomEntry.EngramEntry_TekUnderwaterBase_BottomEntry_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekWall.EngramEntry_TekWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekWallWithDoor.EngramEntry_TekWallWithDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekWallWithWindow.EngramEntry_TekWallWithWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_TekWindow.EngramEntry_TekWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_Tek_Gate.EngramEntry_Tek_Gate_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_Tek_Gate_Large.EngramEntry_Tek_Gate_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_Tek_Gategrame.EngramEntry_Tek_Gategrame_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/CoreBlueprints/Engrams/Tek/EngramEntry_Tek_Gategrame_Large.EngramEntry_Tek_Gategrame_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Doors/Doors_Double/Adobe/EngramEntry_DoubleDoor_Adobe.EngramEntry_DoubleDoor_Adobe_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Doors/Doors_Double/Greenhouse/EngramEntry_DoubleDoor_Greenhouse.EngramEntry_DoubleDoor_Greenhouse_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Doors/Doors_Double/Metal/EngramEntry_DoubleDoor_Metal.EngramEntry_DoubleDoor_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Doors/Doors_Double/Stone/EngramEntry_DoubleDoor_Stone.EngramEntry_DoubleDoor_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Doors/Doors_Double/Tek/EngramEntry_DoubleDoor_Tek.EngramEntry_DoubleDoor_Tek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Doors/Doors_Double/Wood/EngramEntry_DoubleDoor_Wood.EngramEntry_DoubleDoor_Wood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Misc/DedicatedStorage/EngramEntry_DedicatedStorage.EngramEntry_DedicatedStorage_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Pipes/Flex/Metal/EngramEntry_PipeFlex_Metal.EngramEntry_PipeFlex_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Pipes/Flex/Stone/EngramEntry_PipeFlex_Stone.EngramEntry_PipeFlex_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ceilings/Triangle/Adobe/EngramEntry_TriCeiling_Adobe.EngramEntry_TriCeiling_Adobe_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ceilings/Triangle/Greenhouse/EngramEntry_TriCeiling_Greenhouse.EngramEntry_TriCeiling_Greenhouse_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ceilings/Triangle/Metal/EngramEntry_TriCeiling_Metal.EngramEntry_TriCeiling_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ceilings/Triangle/Stone/EngramEntry_TriCeiling_Stone.EngramEntry_TriCeiling_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ceilings/Triangle/Tek/EngramEntry_TriCeiling_Tek.EngramEntry_TriCeiling_Tek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ceilings/Triangle/Wood/EngramEntry_TriCeiling_Wood.EngramEntry_TriCeiling_Wood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Doorframes_Double/Adobe/EngramEntry_DoubleDoorframe_Adobe.EngramEntry_DoubleDoorframe_Adobe_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Doorframes_Double/Greenhouse/EngramEntry_DoubleDoorframe_Greenhouse.EngramEntry_DoubleDoorframe_Greenhouse_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Doorframes_Double/Metal/EngramEntry_DoubleDoorframe_Metal.EngramEntry_DoubleDoorframe_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Doorframes_Double/Stone/EngramEntry_DoubleDoorframe_Stone.EngramEntry_DoubleDoorframe_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Doorframes_Double/Tek/EngramEntry_DoubleDoorframe_Tek.EngramEntry_DoubleDoorframe_Tek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Doorframes_Double/Wood/EngramEntry_DoubleDoorframe_Wood.EngramEntry_DoubleDoorframe_Wood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/FenceSupports/Adobe/EngramEntry_FenceSupport_Adobe.EngramEntry_FenceSupport_Adobe_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/FenceSupports/Metal/EngramEntry_FenceSupport_Metal.EngramEntry_FenceSupport_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/FenceSupports/Stone/EngramEntry_FenceSupport_Stone.EngramEntry_FenceSupport_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/FenceSupports/Tek/EngramEntry_FenceSupport_Tek.EngramEntry_FenceSupport_Tek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/FenceSupports/Wood/EngramEntry_FenceSupport_Wood.EngramEntry_FenceSupport_Wood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Foundations/Triangle/Adobe/EngramEntry_TriFoundation_Adobe.EngramEntry_TriFoundation_Adobe_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Foundations/Triangle/Metal/EngramEntry_TriFoundation_Metal.EngramEntry_TriFoundation_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Foundations/Triangle/Stone/EngramEntry_TriFoundation_Stone.EngramEntry_TriFoundation_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Foundations/Triangle/Tek/EngramEntry_TriFoundation_Tek.EngramEntry_TriFoundation_Tek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Foundations/Triangle/Wood/EngramEntry_TriFoundation_Wood.EngramEntry_TriFoundation_Wood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ramps/Adobe/EngramEntry_Ramp_Adobe.EngramEntry_Ramp_Adobe_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ramps/Metal/EngramEntry_Ramp_Metal.EngramEntry_Ramp_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ramps/Stone/EngramEntry_Ramp_Stone.EngramEntry_Ramp_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ramps/Tek/EngramEntry_Ramp_Tek.EngramEntry_Ramp_Tek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Ramps/Wood/EngramEntry_Ramp_Wood.EngramEntry_Ramp_Wood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Roofs_Tri/Adobe/EngramEntry_TriRoof_Adobe.EngramEntry_TriRoof_Adobe_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Roofs_Tri/Greenhouse/EngramEntry_TriRoof_Greenhouse.EngramEntry_TriRoof_Greenhouse_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Roofs_Tri/Metal/EngramEntry_TriRoof_Metal.EngramEntry_TriRoof_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Roofs_Tri/Stone/EngramEntry_TriRoof_Stone.EngramEntry_TriRoof_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Roofs_Tri/Tek/EngramEntry_TriRoof_Tek.EngramEntry_TriRoof_Tek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Roofs_Tri/Wood/EngramEntry_TriRoof_Wood.EngramEntry_TriRoof_Wood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Walls_L/Adobe/EngramEntry_LargeWall_Adobe.EngramEntry_LargeWall_Adobe_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Walls_L/Metal/EngramEntry_LargeWall_Metal.EngramEntry_LargeWall_Metal_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Walls_L/Stone/EngramEntry_LargeWall_Stone.EngramEntry_LargeWall_Stone_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Walls_L/Tek/EngramEntry_LargeWall_Tek.EngramEntry_LargeWall_Tek_C",
+      "level": 0,
+      "points": 0,
+      "group": "TEK"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Structures/Walls_L/Wood/EngramEntry_LargeWall_Wood.EngramEntry_LargeWall_Wood_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/PrimalEarth/StructuresPlus/Wires/Flex/EngramEntry_Wire_Flex.EngramEntry_Wire_Flex_C",
+      "level": 0,
+      "points": 0,
+      "group": "BaseGame"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/CoreBlueprints/Engrams/EngramEntry_Clay.EngramEntry_Clay_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/CoreBlueprints/Engrams/EngramEntry_PreservingSalt.EngramEntry_PreservingSalt_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Dinos/Camelsaurus/EngramEntry_Saddle_Camelsaurus.EngramEntry_Saddle_Camelsaurus_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Dinos/Mantis/EngramEntry_Saddle_Mantis.EngramEntry_Saddle_Mantis_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Dinos/Moth/EngramEntry_Saddle_Moth.EngramEntry_Saddle_Moth_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Dinos/RockGolem/EngramEntry_Saddle_RockGolem.EngramEntry_Saddle_RockGolem_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Dinos/SpineyLizard/EngramEntry_Saddle_SpineyLizard.EngramEntry_Saddle_SpineyLizard_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Outfits/EngramEntry_DesertClothBoots.EngramEntry_DesertClothBoots_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Outfits/EngramEntry_DesertClothGloves.EngramEntry_DesertClothGloves_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Outfits/EngramEntry_DesertClothGooglesHelmet.EngramEntry_DesertClothGooglesHelmet_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Outfits/EngramEntry_DesertClothPants.EngramEntry_DesertClothPants_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Outfits/EngramEntry_DesertClothShirt.EngramEntry_DesertClothShirt_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeCeiling.EngramEntry_AdobeCeiling_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeCeilingDoorGiant.EngramEntry_AdobeCeilingDoorGiant_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeCeilingWithDoorWay_Giant.EngramEntry_AdobeCeilingWithDoorWay_Giant_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeCeilingWithTrapdoor.EngramEntry_AdobeCeilingWithTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeDoor.EngramEntry_AdobeDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeFenceFoundation.EngramEntry_AdobeFenceFoundation_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeFloor.EngramEntry_AdobeFloor_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeGate.EngramEntry_AdobeGate_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeGate_Large.EngramEntry_AdobeGate_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeGateway.EngramEntry_AdobeGateway_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeGateway_Large.EngramEntry_AdobeGateway_Large_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeLadder.EngramEntry_AdobeLadder_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobePillar.EngramEntry_AdobePillar_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeRailing.EngramEntry_AdobeRailing_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeRamp.EngramEntry_AdobeRamp_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeRoof.EngramEntry_AdobeRoof_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeSlopedWall_Left.EngramEntry_AdobeSlopedWall_Left_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeSlopedWall_Right.EngramEntry_AdobeSlopedWall_Right_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeStairs.EngramEntry_AdobeStairs_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeTrapdoor.EngramEntry_AdobeTrapdoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeWall.EngramEntry_AdobeWall_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeWallWithDoor.EngramEntry_AdobeWallWithDoor_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeWallWithWindow.EngramEntry_AdobeWallWithWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Adobe/Engrams/EngramEntry_AdobeWindow.EngramEntry_AdobeWindow_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/DesertFurnitureSet/Mirror/EngramEntry_Mirror.EngramEntry_Mirror_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/DesertFurnitureSet/Vessel/EngramEntry_Vessel.EngramEntry_Vessel_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/OilPump/EngramEntry_OilPump.EngramEntry_OilPump_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/Tent/EngramEntry_Tent.EngramEntry_Tent_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/WaterWell/EngramEntry_WaterWell.EngramEntry_WaterWell_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/Structures/WindTurbine/EngramEntry_WindTurbine.EngramEntry_WindTurbine_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponBoomerang/EngramEntry_Boomerang.EngramEntry_Boomerang_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponBoomerang/EngramEntry_FlameArrow.EngramEntry_FlameArrow_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponBoomerang/EngramEntry_OilJar.EngramEntry_OilJar_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponChainsaw/EngramEntry_ChainSaw.EngramEntry_ChainSaw_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponClusterGrenade/EngramEntry_ClusterGrenade.EngramEntry_ClusterGrenade_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponFlamethrower/EngramEntry_Flamethrower.EngramEntry_Flamethrower_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponFlamethrower/EngramEntry_FlamethrowerAmmo.EngramEntry_FlamethrowerAmmo_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponFlamethrower/EngramEntry_Propellant.EngramEntry_Propellant_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponHomingMissile/EngramEntry_RocketHommingAmmo.EngramEntry_RocketHommingAmmo_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    },
+    {
+      "name": "Unknown",
+      "blueprint": "/Game/ScorchedEarth/WeaponWhip/EngramEntry_WeaponWhip.EngramEntry_WeaponWhip_C",
+      "level": 0,
+      "points": 0,
+      "group": "Scorched Earth"
+    }
+  ]
+}

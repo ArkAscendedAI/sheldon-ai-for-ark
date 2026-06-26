@@ -1,0 +1,34 @@
+# Sheldon Bridge - Docker companion for the Sheldon AI for ARK mod.
+#
+#   1. cp mcp-bridge/.env.example .env   # set SHELDON_LLM_API_KEY + SHELDON_SHARED_SECRET
+#   2. docker compose up -d
+#   3. point your ARK server's GameUserSettings.ini [SheldonAI] at this host:
+#        WebSocketURL="ws://<this-host>:8443"
+#        AuthSecret=<the same value as SHELDON_SHARED_SECRET>
+#
+services:
+  sheldon-bridge:
+    build: .
+    image: sheldon-bridge:latest
+    # Or skip the build and pull a published image:
+    #image: ghcr.io/arkascendedai/sheldon-bridge:latest
+    container_name: sheldon-bridge
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8443:8443"
+    volumes:
+      # Durable: <cluster>/campaign.db (back this up). Disposable: telemetry.db.
+      # Also holds the audit log (and the TLS cert, if you enable TLS below).
+      - sheldon-data:/data
+    # By default the bridge serves a plain ws:// WebSocket and the mod's
+    # WebSocketURL uses ws://. This is the normal setup. To encrypt the
+    # connection instead, uncomment the two lines below (the container generates
+    # a self-signed cert at these paths on first start, or mount your own real
+    # cert there) AND change the mod's WebSocketURL to wss://.
+    #environment:
+    #  SHELDON_SSL_CERT: /data/certs/bridge.crt
+    #  SHELDON_SSL_KEY: /data/certs/bridge.key
+
+volumes:
+  sheldon-data:

@@ -1,0 +1,12 @@
+{
+  "_comment": "Minimal config. Only these two sections are required; everything else uses sensible defaults. You do not need this file at all if you prefer to configure the bridge with SHELDON_* environment variables (see mcp-bridge/.env.example). Precedence: env vars > config.json > defaults.",
+
+  "llm": {
+    "provider": "openrouter",
+    "api_key": "your-api-key-here"
+  },
+
+  "auth": {
+    "shared_secret": "paste-a-generated-secret-here"
+  }
+}

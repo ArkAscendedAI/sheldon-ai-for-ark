@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Rex",
+    "blueprint": "/Game/PrimalEarth/Dinos/Rex/Rex_Character_BP.Rex_Character_BP",
+    "nicknames": ["Rex", "Rexy", "T-Rex", "Tyrannosaurus"],
+    "diet": "Carnivore",
+    "temperament": "Aggressive",
+    "tameable": true,
+    "taming": {
+      "method": "violent",
+      "kibble": "Exceptional Kibble",
+      "favorite_food": "Raw Mutton"
+    },
+    "mod": "vanilla",
+    "maps": ["The Island", "Scorched Earth", "Ragnarok", "Valguero", "Extinction"]
+  },
+  {
+    "name": "Yutyrannus",
+    "blueprint": "/Game/PrimalEarth/Dinos/Yutyrannus/Yuti_Character_BP.Yuti_Character_BP",
+    "nicknames": ["Yuty", "Yuti", "Furry Rex", "Fluffy Rex", "Feather Rex"],
+    "diet": "Carnivore",
+    "temperament": "Aggressive",
+    "tameable": true,
+    "taming": {
+      "method": "violent",
+      "kibble": "Extraordinary Kibble",
+      "favorite_food": "Raw Mutton"
+    },
+    "mod": "vanilla",
+    "maps": ["The Island", "Ragnarok", "Valguero"]
+  },
+  {
+    "name": "Argentavis",
+    "blueprint": "/Game/PrimalEarth/Dinos/Argentavis/Argent_Character_BP.Argent_Character_BP",
+    "nicknames": ["Argy", "Argent", "Argentavis"],
+    "diet": "Carnivore",
+    "temperament": "Aggressive",
+    "tameable": true,
+    "taming": {
+      "method": "violent",
+      "kibble": "Superior Kibble",
+      "favorite_food": "Raw Mutton"
+    },
+    "mod": "vanilla",
+    "maps": ["The Island", "Scorched Earth", "Ragnarok", "Valguero"]
+  },
+  {
+    "name": "Carbonemys",
+    "blueprint": "/Game/PrimalEarth/Dinos/Turtle/Turtle_Character_BP.Turtle_Character_BP",
+    "nicknames": ["Turtle", "Turt", "Carbon", "Carbonemys"],
+    "diet": "Herbivore",
+    "temperament": "Defensive",
+    "tameable": true,
+    "taming": {
+      "method": "violent",
+      "kibble": "Regular Kibble",
+      "favorite_food": "Mejoberry"
+    },
+    "mod": "vanilla",
+    "maps": ["The Island", "Ragnarok", "Valguero", "The Center"]
+  },
+  {
+    "name": "Therizinosaurus",
+    "blueprint": "/Game/PrimalEarth/Dinos/Therizinosaurus/Therizino_Character_BP.Therizino_Character_BP",
+    "nicknames": ["Therizino", "Theri", "Tickle Chicken", "Murder Chicken", "Fear Turkey"],
+    "diet": "Herbivore",
+    "temperament": "Aggressive",
+    "tameable": true,
+    "taming": {
+      "method": "violent",
+      "kibble": "Exceptional Kibble",
+      "favorite_food": "Mejoberry"
+    },
+    "mod": "vanilla",
+    "maps": ["The Island", "Ragnarok", "Valguero"]
+  },
+  {
+    "name": "Pteranodon",
+    "blueprint": "/Game/PrimalEarth/Dinos/Ptero/Ptero_Character_BP.Ptero_Character_BP",
+    "nicknames": ["Ptera", "PT", "Pteranodon"],
+    "diet": "Carnivore",
+    "temperament": "Skittish",
+    "tameable": true,
+    "taming": {
+      "method": "violent",
+      "kibble": "Regular Kibble",
+      "favorite_food": "Raw Mutton"
+    },
+    "mod": "vanilla",
+    "maps": ["The Island", "Scorched Earth", "Ragnarok", "Valguero", "The Center"]
+  },
+  {
+    "name": "Giganotosaurus",
+    "blueprint": "/Game/PrimalEarth/Dinos/Giganotosaurus/Gigant_Character_BP.Gigant_Character_BP",
+    "nicknames": ["Giga", "Giganoto"],
+    "diet": "Carnivore",
+    "temperament": "Angry",
+    "tameable": true,
+    "taming": {
+      "method": "violent",
+      "kibble": "Exceptional Kibble",
+      "favorite_food": "Raw Mutton"
+    },
+    "mod": "vanilla",
+    "maps": ["The Island", "Ragnarok", "Valguero", "Extinction"]
+  }
+]

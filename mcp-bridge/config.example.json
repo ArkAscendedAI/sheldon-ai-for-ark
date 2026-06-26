@@ -1,0 +1,40 @@
+{
+  "llm": {
+    "provider": "openrouter",
+    "model": "anthropic/claude-sonnet-4-6",
+    "api_key": "${SHELDON_LLM_API_KEY}",
+    "max_tokens": 4096,
+    "temperature": 0.7,
+    "timeout": 60,
+    "num_retries": 2,
+    "max_tool_iterations": 25
+  },
+  "auth": {
+    "shared_secret": "${SHELDON_SHARED_SECRET}"
+  },
+  "server": {
+    "websocket_host": "0.0.0.0",
+    "websocket_port": 8443,
+    "websocket_ssl_cert": null,
+    "websocket_ssl_key": null
+  },
+  "personality": {
+    "name": "Sheldon",
+    "prompt_file": null,
+    "server_context_dir": null
+  },
+  "persistence": {
+    "data_root": "/data",
+    "default_cluster_id": "default",
+    "default_server_id": "default",
+    "server_ip_map": {},
+    "context_token_budget": 14000
+  },
+  "data": {
+    "dino_data_dirs": ["./data/vanilla", "./data/custom"]
+  },
+  "logging": {
+    "audit_file": "/data/logs/audit.jsonl",
+    "level": "INFO"
+  }
+}

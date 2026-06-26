@@ -1,0 +1,19 @@
+# Keep the build context small and secret-free.
+.git
+.gitignore
+.claude
+**/.venv
+**/__pycache__
+**/*.py[cod]
+**/.pytest_cache
+**/.mypy_cache
+
+# Bridge runtime state / secrets — never in the image
+mcp-bridge/config.json
+mcp-bridge/config.json.bak*
+mcp-bridge/logs
+mcp-bridge/data/db
+**/.env
+
+# Large raw source data (the cooked KB in data/vanilla IS included; raw is not)
+data/raw

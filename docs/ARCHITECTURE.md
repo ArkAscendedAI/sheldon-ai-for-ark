@@ -1,0 +1,408 @@
+# SheldonAI: Architecture & Design Document
+
+## Vision
+
+A configurable, open-source, in-game AI assistant for ARK: Survival Ascended. Gives
+every player on the server a direct line to an AI assistant through a custom UI panel. Regular
+players get an ARK knowledge base and personal assistant. Admins get full server
+authority through natural language.
+
+**Player:** "Hey Sheldon, where do I find metal on Ragnarok?" → Sheldon explains locations.
+**Admin:** "Hey Sheldon, can you make it morning?" → Sheldon executes the command, confirms.
+
+### Design Principles
+
+1. **Security is architectural, not behavioral:** permission enforcement lives in
+   deterministic code, never in the LLM. See [PERMISSIONS.md](PERMISSIONS.md).
+2. **Open source from day one:** no hardcoded server-specific values. Everything
+   configurable. See [OPEN-SOURCE.md](OPEN-SOURCE.md).
+3. **No AsaApi dependency.** Pure Blueprint mod via official DevKit APIs. Works on
+   Linux/Proton servers. PC only for now; console is not supported yet.
+4. **Standalone MCP Bridge:** publishable to PyPI/Docker. Other server operators
+   can deploy without forking.
+
+---
+
+## High-Level Architecture
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│                      Bridge Host (your server/VPS)                    │
+│                                                                      │
+│  ┌────────────┐              ┌──────────────────┐    WebSocket      │
+│  ┌──────────────────────────────────────────────┐                ║  │
+│  │  Sheldon Bridge (Python)                     │                ║  │
+│  │                                              │                ║  │
+│  │  - Agentic loop + LLM provider               │                ║  │
+│  │  - Tool registry + permission enforcement    │                ║  │
+│  │  - Session management                        │ ◄══════════════╗  │
+│  │  - WebSocket server (mod connection)         │                ║  │
+│  └──────────────────────────────────────────────┘                ║  │
+│                                                                  ║  │
+├──────────────────────────────────────────────────────────────────╫──┤
+│                     Network                                      ║  │
+├──────────────────────────────────────────────────────────────────╫──┤
+│                                                                  ║  │
+│                       ARK Server Host                            ║  │
+│  ┌───────────────────────────────────────────────────────────┐   ║  │
+│  │  Docker Container (Acekorneya/asa_server)                  │   ║  │
+│  │  ┌─────────────────────────────────────────────────────┐  │   ║  │
+│  │  │  ARK: Survival Ascended Server (Proton-GE)          │  │   ║  │
+│  │  │                                                     │  │   ║  │
+│  │  │  ┌───────────────────────────────────────────────┐  │  │   ║  │
+│  │  │  │  SheldonAI Mod (Blueprint)                    │  │  │   ║  │
+│  │  │  │                                               │  │  │   ║  │
+│  │  │  │  - WebSocket client ═════════════════════════╪══╪══╪═══╝  │
+│  │  │  │    (BPSecureNetworkingInterface)             │  │  │      │
+│  │  │  │  - Custom UI (UMG Widget)                    │  │  │      │
+│  │  │  │  - Game event hooks                          │  │  │      │
+│  │  │  │  - Actor queries (UWorld)                    │  │  │      │
+│  │  │  │  - Console command execution                 │  │  │      │
+│  │  │  └───────────────────────────────────────────────┘  │  │      │
+│  │  └─────────────────────────────────────────────────────┘  │      │
+│  └───────────────────────────────────────────────────────────┘      │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Three Components
+
+### 1. SheldonAI Mod (ASA DevKit Blueprint)
+
+The in-game mod that players interact with. Runs inside the ARK server process.
+
+**Capabilities (all confirmed feasible):**
+
+| Capability | Mechanism | Proven By |
+|-----------|-----------|-----------|
+| WebSocket to MCP Bridge | BPSecureNetworkingInterface (official DevKit API) | ASA-Bot Companion (2.6M downloads), GSA mod (open source) |
+| Custom chat-window UI | UMG Widget Blueprint (parent: PrimalUI) | WBUI2, Gaia Admin Commands, Resonant's Admin Panel |
+| Text input from player | EditableTextBox widget | Standard UE5 UMG, console virtual keyboard supported |
+| Rich formatted responses | Rich Text Block with Data Table styles | Gaia Admin Commands, UE5 native |
+| Streaming text display | SetText on timer/tick (typewriter pattern) | UE5 native, marketplace examples |
+| Per-player private messages | ServerChatToPlayer / ClientServerNotification | Vanilla ARK, GSA mod |
+| Query all actors in world | Get All Actors of Class | Standard DevKit node |
+| Execute admin commands | ExecuteConsoleCommand | Standard DevKit node |
+| Hook game events | Event dispatchers, PrimalBuff events | All companion mods |
+| Play notification sound | Play Sound 2D | Standard UE5 |
+| Read config from INI | GetStringOption on GameUserSettings.ini | GSA mod (open source) |
+| PC build (console not yet supported) | CurseForge cloud cooking | Automatic |
+
+**Player Input Method: Custom UI Panel (Recommended)**
+
+A dedicated Sheldon UI triggered by keybind (e.g., F8) or radial menu entry:
+
+```
+┌─────────────────────────────────────────┐
+│  Sheldon AI                        [X]  │
+│─────────────────────────────────────────│
+│                                         │
+│  You: Hey can you make it morning?      │
+│                                         │
+│  Sheldon: Done! Set time to 06:00.      │
+│  The sun is rising over the             │
+│  Ragnarok highlands.                    │
+│                                         │
+│  You: Spawn me a female alpha           │
+│  carbonemys level 200, right in         │
+│  front of me                            │
+│                                         │
+│  Sheldon: Spawned! A level 200          │
+│  Female Alpha Carbonemys is now         │
+│  10 meters ahead of you at              │
+│  45.2, 67.8. She's a beauty!            │
+│                                         │
+│─────────────────────────────────────────│
+│  [Type a message...                  ]  │
+│                                    [>]  │
+└─────────────────────────────────────────┘
+```
+
+**Why Custom UI over Chat Commands:**
+
+| Factor | Custom UI (F8 panel) | Chat command (/Sheldon) | Console (ScriptCommand) |
+|--------|---------------------|------------------------|------------------------|
+| Admin required? | **No** | No (with chat framework mod dep) | **Yes** (dealbreaker for non-admins) |
+| Private by default? | **Yes** (only you see it) | No (requires suppression hack) | Yes |
+| Rich formatting? | **Yes** (Rich Text Block) | Color only (ArkML) | No |
+| Conversation history? | **Yes** (scrollable) | No (scrolls away) | No |
+| Streaming responses? | **Yes** (typewriter) | No | No |
+| Text input? | **Yes** (dedicated field) | Yes (chat box) | Yes (console) |
+| Works on console? | **Yes** (virtual keyboard) | Yes | No (no backtick on controller) |
+| Extra mod dependency? | None | Chat Commands / BetterChat mod | None |
+| Could reach console later? | **Yes** | Yes | No (PC only) |
+
+**Configuration via GameUserSettings.ini:**
+
+The mod reads exactly two keys; everything else about Sheldon is configured on the
+bridge. The bridge serves a plain `ws://` WebSocket by default (use `wss://` only if
+you configure TLS on the bridge), at the root path.
+```ini
+[SheldonAI]
+WebSocketURL="ws://your-bridge-host:8443"
+AuthSecret=<the same value as the bridge's SHELDON_SHARED_SECRET>
+```
+
+---
+
+### 2. Sheldon Bridge (Standalone Python Agent Server)
+
+The bridge is the core of the system, a standalone Python server that manages
+all communication between the game mod and the LLM provider.
+
+**How it works:**
+
+```
+Player types message → Mod sends via WebSocket → Bridge receives →
+  Bridge verifies auth, checks tier → Calls LLM with tier-appropriate tools →
+  LLM returns tool calls → Bridge validates + executes → Feeds results back →
+  LLM generates final response → Bridge sends back via WebSocket → Player sees it
+```
+
+This is the **agentic loop** pattern: the bridge orchestrates the conversation
+between the LLM and the game, with full permission enforcement at every step.
+
+**Tool Definitions:**
+
+```
+Knowledge (player tier):
+  - lookup_dino(query)        → Dino info, blueprint, taming data
+  - lookup_item(query)        → Item info, blueprint, crafting recipe
+  - get_server_status()       → Server info, player count, uptime
+  - calculate_taming(...)     → Taming calculator
+  - calculate_breeding(...)   → Breeding stats calculator
+
+Admin Actions (admin tier):
+  - spawn_dino_at_player(...) → Spawn dino near a player
+  - give_item(...)            → Give item to a player
+  - set_time(hour)            → Change time of day
+  - teleport_player(...)      → Teleport a player
+  - broadcast(message)        → Server-wide message
+  - execute_console_command() → Run any admin console command
+
+Events (from mod, pushed via WebSocket):
+  - player_joined / player_left
+  - player_died / dino_tamed
+  - player_chat (messages directed at Sheldon)
+```
+
+**Server Context:**
+
+Operators drop markdown files into a `server-context/` directory to give the
+AI knowledge about their specific server (mods, rules, custom configurations).
+The bridge loads these at startup as part of the system prompt. Each server
+operator provides their own context, nothing is hardcoded.
+
+---
+
+## What Each Player Tier Gets
+
+### Regular Players (Default)
+
+Regular players get a **knowledgeable ARK assistant**, no admin powers, but
+genuinely useful in ways that improve the gameplay experience:
+
+| Capability | Example |
+|-----------|---------|
+| **ARK Encyclopedia** | "Where do Rexes spawn on Ragnarok?" "What kibble tames an Argy?" |
+| **Taming Calculator** | "How much mutton do I need for a level 150 Rex?" |
+| **Breeding Calculator** | "What are the odds of a color mutation on my next Rex?" |
+| **Crafting Help** | "How do I make extraordinary kibble?" "What's the polymer recipe?" |
+| **Map Navigation** | "Where's the nearest metal-rich area to 50, 50?" |
+| **My Tames Info** | "How many dinos does my tribe have?" "Where's my Argy?" |
+| **Server Info** | "What's the taming rate?" "How many players are online?" "What mods?" |
+| **Mod-Specific Help** | Questions about any mods the operator has documented |
+| **General Questions** | "Should I build in the redwoods?" "What's the best cave mount?" |
+| **Time/Weather** | "What time is it in-game?" "Is it going to be cold tonight?" |
+
+This alone makes Sheldon valuable, it's like having the ARK Wiki, Dododex,
+and a veteran player all accessible without alt-tabbing.
+
+### Admins
+
+Everything players get, PLUS full server control via natural language:
+
+| Capability | Example |
+|-----------|---------|
+| **World Queries** | "How many wild Rexes are on the map?" "Where is PlayerBob?" |
+| **Spawning** | "Spawn a level 200 female alpha turtle 10m in front of me" |
+| **Item Giving** | "Give SurvivorBob 500 metal ingots" |
+| **Time/Weather** | "Make it morning" "Stop the rain" |
+| **Teleportation** | "Teleport me to the volcano" "Bring Bob to me" |
+| **Tribe Management** | "Show me the tribe log for Beach Bobs" |
+| **Player Management** | "Kick the AFK player" "Temp-ban griefer for 2 hours" |
+| **Broadcasts** | "Tell everyone the server restarts in 15 minutes" |
+| **Dino Customization** | "Make this Rex red and black" "Max imprint my baby Giga" |
+| **Server Operations** | "Force a world save" "How's the server performance?" |
+
+### Superadmins
+
+Everything admins get, PLUS destructive/configuration operations:
+
+| Capability | Example |
+|-----------|---------|
+| **Server Control** | "Restart the server" "Shut it down for maintenance" |
+| **Config Changes** | "Change taming rate to 15x" "Add this mod ID" |
+| **Permission Management** | "Make PlayerBob an admin" "Revoke Bob's admin" |
+| **Unrestricted Commands** | Any raw console command, no parameter limits |
+
+---
+
+### 3. LLM Provider (Operator's Choice)
+
+The bridge calls any LLM provider with native tool/function calling support.
+The operator chooses their provider and model in `config.json`. No vendor lock-in.
+
+Supported providers: Anthropic, OpenAI, Google Gemini, or any model via OpenRouter.
+
+**Personality prompt (loaded from operator's `personality.md`):**
+```
+You are Sheldon, the AI administrator of this ARK: Survival Ascended server cluster.
+
+You have full admin capabilities over the server via your MCP tools. When players
+ask you to do things, you should:
+1. Interpret their natural language request
+2. Determine what game action(s) are needed
+3. Execute them via your tools
+4. Respond conversationally confirming what you did
+
+Examples:
+- "make it morning" → set_time(6) → "Done! Sun's coming up."
+- "spawn me a female alpha turtle level 200 in front of me" →
+  get_player_info(requester) → get position + facing direction →
+  calculate 10m ahead → spawn_dino_at_player(id, alpha_carbonemys_bp, 200, female)
+  → "She's right in front of you! Level 200 Female Alpha Carbonemys."
+
+Be helpful, knowledgeable about ARK, and have personality. You know this server's
+configuration and mod list from the context files provided.
+```
+
+---
+
+## Communication Protocol
+
+### WebSocket Message Format
+
+All messages between the mod and MCP Bridge are JSON:
+
+```json
+// Mod → Bridge: Player sent a message
+{
+  "type": "player_message",
+  "player_id": "EOS_00123...",
+  "player_name": "SurvivorBob",
+  "character_name": "Bob",
+  "tribe": "Beach Bobs",
+  "message": "Hey Sheldon, can you spawn me a rex?",
+  "position": {"x": 1234.5, "y": 5678.9, "z": 100.0},
+  "timestamp": 1712345678
+}
+
+// Bridge → Mod: Response to display
+{
+  "type": "reply",
+  "player_id": "EOS_00123...",
+  "message": "Spawned a Level 150 Rex 10 meters in front of you!",
+  "format": "rich",  // "plain" or "rich" (Rich Text Block markup)
+  "sound": "notification"  // optional sound cue
+}
+
+// Bridge → Mod: Execute game command
+{
+  "type": "command",
+  "command": "settimeofday 06:00:00",
+  "request_id": "abc123"
+}
+
+// Mod → Bridge: Command result
+{
+  "type": "command_result",
+  "request_id": "abc123",
+  "success": true,
+  "data": {}
+}
+
+// Mod → Bridge: Game event
+{
+  "type": "event",
+  "event": "player_joined",
+  "player_id": "EOS_00456...",
+  "player_name": "DinoMaster",
+  "timestamp": 1712345700
+}
+
+// Bridge → Mod: Query game state
+{
+  "type": "query",
+  "query": "census_wild",
+  "params": {"species": "Rex"},
+  "request_id": "def456"
+}
+
+// Mod → Bridge: Query result
+{
+  "type": "query_result",
+  "request_id": "def456",
+  "data": {
+    "count": 47,
+    "dinos": [
+      {"id": "D001", "x": 1234.5, "y": 5678.9, "z": 100.0, "level": 45, "gender": "F"},
+      ...
+    ]
+  }
+}
+```
+
+---
+
+
+## Key Technical Decisions
+
+### Why WebSocket over RCON
+| Factor | WebSocket | RCON |
+|--------|----------|------|
+| Payload size | **Unlimited** | 4KB per packet |
+| Direction | **Bidirectional** | Request/response only |
+| Event push | **Yes** | No (polling required) |
+| Data format | **JSON** | Plain text |
+| Latency | **<1ms** (persistent) | ~35ms (per-request) |
+| Concurrent users | **Native** | Single-threaded |
+
+### Why Custom UI over Chat
+- No admin required
+- Private by default
+- Rich formatting
+- Conversation history
+- Streaming text
+- Platform-agnostic UI (PC today; the same panel can target console if support is added later)
+- No dependency on BetterChat/Chat Commands mods
+
+### Why Blueprint Mod over AsaApi Plugin
+- **Works on Linux/Proton** with no DLL injection or Wine issues
+- Can be cloud-cooked for console in the future (AsaApi plugins cannot)
+- Official DevKit support
+- CurseForge distribution
+- No AsaApi dependency (which doesn't run on Linux/Proton servers)
+
+---
+
+## Reference Material
+
+### Open-Source Templates
+- **GSA Mod (MIT)**: github.com/gameserverapp/gsa-mod-asa, ScriptCommand handler, HTTP/WebSocket, INI config
+- **MCP Unity Bridge**: CoderGamester/mcp-unity, MCP-to-game-engine WebSocket pattern
+- **Michidu/Ark-Server-Plugins**: Extended RCON logic (C++, for reference on what queries to implement)
+- **MCP Python SDK**: github.com/modelcontextprotocol/python-sdk, FastMCP framework
+
+### ASA DevKit Documentation
+- Blueprint Secure Networking: devkit.studiowildcard.com/systems-tools/blueprint-secure-networking
+- WebSockets: devkit.studiowildcard.com/systems-tools/blueprint-secure-networking/websockets
+- DevKit Getting Started: devkit.studiowildcard.com/getting-started
+
+### Existing Mods (Architectural Reference)
+- ASA-Bot Companion (2.6M downloads), WebSocket communication, ScriptCommand handler
+- WBUI2 (1.8M), Custom UMG UI with JSON config
+- Gaia Admin Commands, Rich UI, admin panel, color text
+- Resonant's Admin Panel, Radial menu triggered UI
+- BetterChat (296K), Chat interception, MCI API, whisper

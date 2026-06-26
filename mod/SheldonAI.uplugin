@@ -1,0 +1,20 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "05E2EC8C4B0160B1C9DA3A9F6FA2E33B",
+	"FriendlyName": "SheldonAI",
+	"Description": "Add your summary here",
+	"Category": "UGC",
+	"CreatedBy": "cerebralmonk",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "https://legacy.curseforge.com/ark-survival-ascended/mods/sheldonai",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"ExplicitlyLoaded": true,
+	"CfUgcId": 1524958,
+	"AutoCookingType": "PCOnly"
+}

@@ -1,0 +1,62 @@
+{
+  "_comment": "Advanced config. Every option is shown with its default value; include only the keys you want to change. Most of these can also be set with SHELDON_* environment variables (see mcp-bridge/.env.example). For 'model', use the exact id your provider lists.",
+
+  "_comment_tiers": "Each tool already belongs to a built-in tier: 25 player tools and 5 admin tools (spawn_dino_at_player, set_time, give_item, execute_console_command, broadcast). A player is assigned the admin tier automatically when they are a server admin (in AllowedCheaterPlayerIDs). You do NOT need to list tools to get the defaults. Use the 'tiers' block only to customize per-tier rate limits, add parameter limits, grant extra tools (glob patterns, additive on top of the built-ins), or define your own tiers. 'inherits' pulls in everything from a parent tier.",
+
+  "llm": {
+    "provider": "openrouter",
+    "model": "openrouter/anthropic/claude-sonnet-4.6",
+    "api_key": "${SHELDON_LLM_API_KEY}",
+    "max_tokens": 4096,
+    "temperature": 0.7,
+    "timeout": 60,
+    "num_retries": 2,
+    "max_tool_iterations": 25,
+    "fallback_models": []
+  },
+
+  "server": {
+    "websocket_host": "0.0.0.0",
+    "websocket_port": 8443,
+    "websocket_ssl_cert": null,
+    "websocket_ssl_key": null
+  },
+
+  "auth": {
+    "shared_secret": "${SHELDON_SHARED_SECRET}"
+  },
+
+  "tiers": {
+    "player": {
+      "rate_limit": { "requests_per_minute": 10, "tool_calls_per_minute": 5 }
+    },
+    "admin": {
+      "inherits": "player",
+      "rate_limit": { "requests_per_minute": 30, "tool_calls_per_minute": 20 },
+      "constraints": {
+        "spawn_dino_at_player": { "max_level": 500 },
+        "give_item": { "max_quantity": 1000 }
+      }
+    },
+    "superadmin": {
+      "inherits": "admin",
+      "tools": ["*"],
+      "rate_limit": { "requests_per_minute": 60, "tool_calls_per_minute": 40 }
+    }
+  },
+
+  "personality": {
+    "name": "Sheldon",
+    "prompt_file": null,
+    "server_context_dir": null
+  },
+
+  "data": {
+    "dino_data_dirs": ["./data/vanilla", "./data/custom"]
+  },
+
+  "logging": {
+    "audit_file": "./logs/audit.jsonl",
+    "level": "INFO"
+  }
+}
